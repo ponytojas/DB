@@ -5,6 +5,12 @@ BEGIN TRANSACTION;
 	DROP TABLE IF EXISTS  MUSICOS CASCADE;
 	DROP TABLE IF EXISTS INSTRUMENTOS CASCADE;
 	DROP TABLE IF EXISTS COMPOSITORES CASCADE;
+	DROP TABLE IF EXISTS ENTRADA CASCADE;
+	DROP TABLE IF EXISTS CONCIERTO CASCADE;
+	DROP TABLE IF EXISTS USUARIO CASCADE;
+	DROP TABLE IF EXISTS GRUPO CASCADE;
+	DROP TABLE IF EXISTS DISCO CASCADE;
+	DROP TABLE IF EXISTS CANCION CASCADE;
 END TRANSACTION;
 
 
@@ -24,8 +30,6 @@ CREATE TABLE MUSICOS (
 	DIRECCION_MUSICO varchar (30),
 	CODIGO_POSTAL int,
 	PROVINCIA varchar (30),
-
-
 	NUMERO_TELEFONO int,
 	INSTRUMENTO_MUSICO varchar (20),
 	CODIGO_COMPOSITOR_MUSICO varchar (10),
@@ -41,7 +45,6 @@ CREATE TABLE ENTRADA (
 	precio_entrada money,
 	puntos_ganados smallint ,
 	puntos_gastados smallint,
-
 	codigo_concierto smallint,
 	dni_usuario varchar (10),
 
@@ -55,7 +58,7 @@ CREATE TABLE CONCIERTO (
 
 	CONSTRAINT FK_CODIGO_GRUPO_CONCIERTO FOREIGN KEY (codigo_grupo) REFERENCES GRUPO (codigo_grupo)
 );
-CREATE TABLE USUARIO(
+CREATE TABLE USUARIO (
 	dni_usuario smallint PRIMARY KEY ,
 	email_usuario varchar (30),
 	nombre_usuario varchar (15),
@@ -63,5 +66,40 @@ CREATE TABLE USUARIO(
 	puntos_totales smallint ,
 
 
+);
+CREATE TABLE GRUPO (
+	codigo_grupo smallint PRIMARY KEY ,
+	genero varchar (15)
+
+);
+CREATE TABLE DISCO(
+	codigo_disco smallint PRIMARY KEY ,
+	fecha_edicion date,
+	titulo_disco varchar(30),
+	genero_disco varchar(15),
+	codigo_grupo smallint,
+
+	ES_FISICO boolean,
+	ES_DIGITAL boolean,
+
+	CONSTRAINT FK_CODIGO_GRUPO_DISCO FOREIGN KEY (codigo_grupo) REFERENCES GRUPO (codigo_grupo)
+
+);
+
+CREATE TABLE CANCION (
+codigo_cancion smallint PRIMARY KEY,
+duracion smallint ,
+id_compositor smallint ,
+codigo_disco smallint,
+
+CONSTRAINT FK_ID_COMPOSITOR FOREIGN KEY (id_compositor) REFERENCES COMPOSITORES (codigo_compositor),
+CONSTRAINT FK_CODIGO_DISCO_CANCION FOREIGN KEY (codigo_disco) REFERENCES DISCO (codigo_disco)
+);
+
+CREATE TABLE OPINION (
+	codigo_opinion smallint PRIMARY KEY ,
+	dni_usuario varchar(8),
+
+	CONSTRAINT FK_DNI_USUARIO_OPINION FOREIGN KEY (dni_usuario) REFERENCES USUARIO (dni_usuario)
 );
 
