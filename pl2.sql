@@ -24,8 +24,9 @@ CREATE TABLE MUSICOS (
 	DIRECCION_MUSICO varchar (30),
 	CODIGO_POSTAL int,
 	PROVINCIA varchar (30),
+
+
 	NUMERO_TELEFONO int,
-	
 	INSTRUMENTO_MUSICO varchar (20),
 	CODIGO_COMPOSITOR_MUSICO varchar (10),
 	
@@ -34,5 +35,33 @@ CREATE TABLE MUSICOS (
 	
 	CONSTRAINT FK_INSTRUMENTO_MUSICO FOREIGN KEY (INSTRUMENTO_MUSICO) REFERENCES INSTRUMENTOS(CODIGO_INSTRUMENTO),
 	CONSTRAINT FK_COMPOSITOR_MUSICO FOREIGN KEY (CODIGO_COMPOSITOR_MUSICO) REFERENCES COMPOSITORES(CODIGO_COMPOSITOR)
+);
+CREATE TABLE ENTRADA (
+	codigo_entrada smallint PRIMARY KEY,
+	precio_entrada money,
+	puntos_ganados smallint ,
+	puntos_gastados smallint,
+
+	codigo_concierto smallint,
+	dni_usuario varchar (10),
+
+	CONSTRAINT FK_CODIGO_CONCIERTO_ENTRADA FOREIGN KEY (codigo_concierto) REFERENCES CONCIERTO (codigo_concierto),
+	CONSTRAINT FK_DNI_USUARIO FOREIGN KEY (dni_usuario) REFERENCES USUARIO (dni_usuario)
+
+);
+CREATE TABLE CONCIERTO (
+	codigo_concierto smallint PRIMARY KEY,
+	codigo_grupo smallint,
+
+	CONSTRAINT FK_CODIGO_GRUPO_CONCIERTO FOREIGN KEY (codigo_grupo) REFERENCES GRUPO (codigo_grupo)
+);
+CREATE TABLE USUARIO(
+	dni_usuario smallint PRIMARY KEY ,
+	email_usuario varchar (30),
+	nombre_usuario varchar (15),
+	apellidos_usuario varchar (30),
+	puntos_totales smallint ,
+
+
 );
 
