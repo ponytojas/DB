@@ -259,3 +259,24 @@ INSERT INTO GRUPOS VALUES ('GRUP00053', 'Heavy Metal', 'EngineHead');
 INSERT INTO GRUPOS VALUES ('GRUP00054', 'Heavy Metal', 'KornFlakes');
 INSERT INTO GRUPOS VALUES ('GRUP00055', 'Heavy Metal', 'Deep Yellow');
 
+/*Usuario*/
+Insert INTO USUARIOS VALUES ('64510552Z', 'jose.lopez@jmail.com', 'Jose', 'Lopez', 2000);
+Insert INTO USUARIOS VALUES ('15625422G', 'paloma.guerrero@witty.com', 'Paloma', 'Guerra', 35);
+Insert INTO USUARIOS VALUES ('89237576Z', 'saul.ballesteros@lycos.com', 'Saul', 'Ballesteros', 9100);
+Insert INTO USUARIOS VALUES ('23213623E', 'milagros.gordillo@jmail.com', 'Milagros', 'Gordillo', 8710);
+Insert INTO USUARIOS VALUES ('57417089G', 'jeromio.abad@jmail.com', 'Jerónimo', 'Abad', 90);
+Insert INTO USUARIOS VALUES ('01225251H', 'alba.galvez@jmail.com', 'Alba', 'Galvez', 100);
+Insert INTO USUARIOS VALUES ('31060609Y', 'estela.palomo@witty.com', 'Estela', 'Palomo', 4535);
+Insert INTO USUARIOS VALUES ('26443180B', 'omar.herrera@witty.com', 'Omar', 'Herrera', 1978);
+Insert INTO USUARIOS VALUES ('77560483K', 'carmen.ros@jmail.com', 'Carmen', 'Ros', 987);
+Insert INTO USUARIOS VALUES ('26538645A', 'aurelia.arce@lycos.com', 'Aurelia', 'Arce', 837);
+Insert INTO USUARIOS VALUES ('92566518M', 'eneko.asensio@witty.com', 'Eneko', 'Asensio', 531);
+Insert INTO USUARIOS VALUES ('42765363Z', 'ramon.gutierrez@jmail.com', 'Ramón', 'Gutierrez', 580);
+Insert INTO USUARIOS VALUES ('33668608N', 'gloria.amador@witty.com', 'Gloria', 'Amador', 750);
+Insert INTO USUARIOS VALUES ('73737078K', 'salvador.marquez@jmail.com', 'Salvador', 'Marquez', 418);
+Insert INTO USUARIOS VALUES ('59146333Q', 'begona.falcon@jmail.com', 'Begoña', 'Falcón', 107);
+Insert INTO USUARIOS VALUES ('64242692N', 'arias.mendez@lycos.com', 'Arias', 'Mendez', 0);
+Insert INTO USUARIOS VALUES ('92644697F', 'ana.tirados@lycos.com', 'Ana', 'Tirados', 2109);
+Insert INTO USUARIOS VALUES ('59547081N', 'amelia.losada@witty.com', 'Amelia', 'Losada', 15);
+Insert INTO USUARIOS VALUES ('86842356Z', 'joana.toro@lycos.com', 'Joana', 'Toro', 395);
+
