@@ -51,10 +51,10 @@ CREATE TABLE MUSICOS (
 	NOMBRE_MUSICO varchar (10),
 	APELLIDOS_MUSICO varchar (30),
 	DIRECCION_MUSICO varchar (30),
-	CODIGO_POSTAL smallint,
+	CODIGO_POSTAL int,
 	PROVINCIA varchar (30),
-	NUMERO_TELEFONO smallint,
-	CODIGO_GRUPO_MUSICO varchar (10)  ,
+	NUMERO_TELEFONO int,
+	CODIGO_GRUPO_MUSICO varchar (10),
 	
 	ES_INSTRUMENTISTA boolean,
 	ES_COMPOSITOR boolean,
@@ -281,6 +281,7 @@ Insert INTO USUARIOS VALUES ('59547081N', 'amelia.losada@witty.com', 'Amelia', '
 Insert INTO USUARIOS VALUES ('86842356Z', 'joana.toro@lycos.com', 'Joana', 'Toro', 395);
 
 /*Musico*/
-
+INSERT INTO MUSICOS VALUES ('69860457G', 'Bob', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 692848, 'GRUP00023', True, True, 'COMP00001','INSGE00003');
+INSERT INTO MUSICOS VALUES ('25801802B', 'Jim', 'Magger', 'Calle Piedras', '581392', 'Valencia', 673858, 'GRUP00002', True, True, 'COMP00002','INSVO00001');
 
 
