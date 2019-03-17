@@ -47,8 +47,8 @@ CREATE TABLE CONCIERTOS (
 );
 
 CREATE TABLE MUSICOS (
-	NOMBRE_MUSICO varchar (10),
 	DNI_MUSICO varchar (10) PRIMARY KEY,
+	NOMBRE_MUSICO varchar (10),
 	APELLIDOS_MUSICO varchar (30),
 	DIRECCION_MUSICO varchar (30),
 	CODIGO_POSTAL smallint,
@@ -279,4 +279,8 @@ Insert INTO USUARIOS VALUES ('64242692N', 'arias.mendez@lycos.com', 'Arias', 'Me
 Insert INTO USUARIOS VALUES ('92644697F', 'ana.tirados@lycos.com', 'Ana', 'Tirados', 2109);
 Insert INTO USUARIOS VALUES ('59547081N', 'amelia.losada@witty.com', 'Amelia', 'Losada', 15);
 Insert INTO USUARIOS VALUES ('86842356Z', 'joana.toro@lycos.com', 'Joana', 'Toro', 395);
+
+/*Musico*/
+
+
 
