@@ -59,8 +59,9 @@ CREATE TABLE MUSICOS (
 	ES_INSTRUMENTISTA boolean,
 	ES_COMPOSITOR boolean,
 	
-	CODIGO_COMPOSITOR_MUSICO varchar (10),
 	CODIGO_INSTRUMENTO_MUSICO varchar (20),
+	CODIGO_COMPOSITOR_MUSICO varchar (10),
+
 	
 	CONSTRAINT IS_COMPOSITOR_FALSE  CHECK ( (NOT ES_COMPOSITOR) OR (CODIGO_COMPOSITOR_MUSICO IS NOT NULL)),
 	CONSTRAINT IS_INSTRUMENTISTA_FALSE  CHECK ( (NOT ES_INSTRUMENTISTA) OR (CODIGO_INSTRUMENTO_MUSICO  IS NOT NULL)),
@@ -204,7 +205,7 @@ INSERT INTO COMPOSITORES VALUES ('COMP00020');
 
 /*Grupo*/
 INSERT INTO GRUPOS VALUES ('GRUP00001', 'Rock', 'Guns and Carnations');
-INSERT INTO GRUPOS VALUES ('GRUP00002', 'Rock', 'Not moving Stones');
+INSERT INTO GRUPOS VALUES ('GRUP00002', 'Rock', 'Not Moving Stones');
 INSERT INTO GRUPOS VALUES ('GRUP00003', 'Rock', 'AB // CD');
 INSERT INTO GRUPOS VALUES ('GRUP00004', 'Rock', 'King');
 INSERT INTO GRUPOS VALUES ('GRUP00005', 'Rock', 'The Butterflies');
@@ -260,28 +261,41 @@ INSERT INTO GRUPOS VALUES ('GRUP00054', 'Heavy Metal', 'KornFlakes');
 INSERT INTO GRUPOS VALUES ('GRUP00055', 'Heavy Metal', 'Deep Yellow');
 
 /*Usuario*/
-Insert INTO USUARIOS VALUES ('64510552Z', 'jose.lopez@jmail.com', 'Jose', 'Lopez', 2000);
-Insert INTO USUARIOS VALUES ('15625422G', 'paloma.guerrero@witty.com', 'Paloma', 'Guerra', 35);
-Insert INTO USUARIOS VALUES ('89237576Z', 'saul.ballesteros@lycos.com', 'Saul', 'Ballesteros', 9100);
-Insert INTO USUARIOS VALUES ('23213623E', 'milagros.gordillo@jmail.com', 'Milagros', 'Gordillo', 8710);
-Insert INTO USUARIOS VALUES ('57417089G', 'jeromio.abad@jmail.com', 'Jerónimo', 'Abad', 90);
-Insert INTO USUARIOS VALUES ('01225251H', 'alba.galvez@jmail.com', 'Alba', 'Galvez', 100);
-Insert INTO USUARIOS VALUES ('31060609Y', 'estela.palomo@witty.com', 'Estela', 'Palomo', 4535);
-Insert INTO USUARIOS VALUES ('26443180B', 'omar.herrera@witty.com', 'Omar', 'Herrera', 1978);
-Insert INTO USUARIOS VALUES ('77560483K', 'carmen.ros@jmail.com', 'Carmen', 'Ros', 987);
-Insert INTO USUARIOS VALUES ('26538645A', 'aurelia.arce@lycos.com', 'Aurelia', 'Arce', 837);
-Insert INTO USUARIOS VALUES ('92566518M', 'eneko.asensio@witty.com', 'Eneko', 'Asensio', 531);
-Insert INTO USUARIOS VALUES ('42765363Z', 'ramon.gutierrez@jmail.com', 'Ramón', 'Gutierrez', 580);
-Insert INTO USUARIOS VALUES ('33668608N', 'gloria.amador@witty.com', 'Gloria', 'Amador', 750);
-Insert INTO USUARIOS VALUES ('73737078K', 'salvador.marquez@jmail.com', 'Salvador', 'Marquez', 418);
-Insert INTO USUARIOS VALUES ('59146333Q', 'begona.falcon@jmail.com', 'Begoña', 'Falcón', 107);
-Insert INTO USUARIOS VALUES ('64242692N', 'arias.mendez@lycos.com', 'Arias', 'Mendez', 0);
-Insert INTO USUARIOS VALUES ('92644697F', 'ana.tirados@lycos.com', 'Ana', 'Tirados', 2109);
-Insert INTO USUARIOS VALUES ('59547081N', 'amelia.losada@witty.com', 'Amelia', 'Losada', 15);
-Insert INTO USUARIOS VALUES ('86842356Z', 'joana.toro@lycos.com', 'Joana', 'Toro', 395);
+INSERT INTO USUARIOS VALUES ('64510552Z', 'jose.lopez@jmail.com', 'Jose', 'Lopez', 2000);
+INSERT INTO USUARIOS VALUES ('15625422G', 'paloma.guerrero@witty.com', 'Paloma', 'Guerra', 35);
+INSERT INTO USUARIOS VALUES ('89237576Z', 'saul.ballesteros@lycos.com', 'Saul', 'Ballesteros', 9100);
+INSERT INTO USUARIOS VALUES ('23213623E', 'milagros.gordillo@jmail.com', 'Milagros', 'Gordillo', 8710);
+INSERT INTO USUARIOS VALUES ('57417089G', 'jeromio.abad@jmail.com', 'Jerónimo', 'Abad', 90);
+INSERT INTO USUARIOS VALUES ('01225251H', 'alba.galvez@jmail.com', 'Alba', 'Galvez', 100);
+INSERT INTO USUARIOS VALUES ('31060609Y', 'estela.palomo@witty.com', 'Estela', 'Palomo', 4535);
+INSERT INTO USUARIOS VALUES ('26443180B', 'omar.herrera@witty.com', 'Omar', 'Herrera', 1978);
+INSERT INTO USUARIOS VALUES ('77560483K', 'carmen.ros@jmail.com', 'Carmen', 'Ros', 987);
+INSERT INTO USUARIOS VALUES ('26538645A', 'aurelia.arce@lycos.com', 'Aurelia', 'Arce', 837);
+INSERT INTO USUARIOS VALUES ('92566518M', 'eneko.asensio@witty.com', 'Eneko', 'Asensio', 531);
+INSERT INTO USUARIOS VALUES ('42765363Z', 'ramon.gutierrez@jmail.com', 'Ramón', 'Gutierrez', 580);
+INSERT INTO USUARIOS VALUES ('33668608N', 'gloria.amador@witty.com', 'Gloria', 'Amador', 750);
+INSERT INTO USUARIOS VALUES ('73737078K', 'salvador.marquez@jmail.com', 'Salvador', 'Marquez', 418);
+INSERT INTO USUARIOS VALUES ('59146333Q', 'begona.falcon@jmail.com', 'Begoña', 'Falcón', 107);
+INSERT INTO USUARIOS VALUES ('64242692N', 'arias.mendez@lycos.com', 'Arias', 'Mendez', 0);
+INSERT INTO USUARIOS VALUES ('92644697F', 'ana.tirados@lycos.com', 'Ana', 'Tirados', 2109);
+INSERT INTO USUARIOS VALUES ('59547081N', 'amelia.losada@witty.com', 'Amelia', 'Losada', 15);
+INSERT INTO USUARIOS VALUES ('86842356Z', 'joana.toro@lycos.com', 'Joana', 'Toro', 395);
 
 /*Musico*/
-INSERT INTO MUSICOS VALUES ('69860457G', 'Bob', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 692848, 'GRUP00023', True, True, 'COMP00001','INSGE00003');
-INSERT INTO MUSICOS VALUES ('25801802B', 'Jim', 'Magger', 'Calle Piedras', '581392', 'Valencia', 673858, 'GRUP00002', True, True, 'COMP00002','INSVO00001');
-
-
+INSERT INTO MUSICOS VALUES ('69860457G', 'Bob', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 692848, 'GRUP00023', True, True,'INSGE00003', 'COMP00001');
+INSERT INTO MUSICOS VALUES ('25801802B', 'Jim', 'Magger', 'Calle Piedras', '581392', 'Valencia', 673858, 'GRUP00002', True, True,'INSVO00001', 'COMP00002');
+INSERT INTO MUSICOS VALUES ('03892666P', 'Reith', 'Kichard', 'Calle Piedras', '581392', 'Valencia', 679858, 'GRUP00002', True, True, 'INSGE00001', 'COMP00003');
+INSERT INTO MUSICOS VALUES ('40684639P', 'Warlie', 'Catts', 'Calle Piedras', '581392', 'Valencia', 679878, 'GRUP00002', True, False, 'INSBA00003', null);
+INSERT INTO MUSICOS VALUES ('79874650C', 'Won', 'Rood', 'Calle Piedras', '581392', 'Valencia', 678878, 'GRUP00002', True, False, 'INSGE00001', null);
+INSERT INTO MUSICOS VALUES ('60298840Q', 'Axel', 'Flower', 'Calle Cielo', '4750', 'Madrid', 678848, 'GRUP00001', True, True, 'INSVO00001', 'COMP00004');
+INSERT INTO MUSICOS VALUES ('60853212L', 'Ash', 'Sl', 'Calle del Cepillo', '23490', 'Cuenca', 612878, 'GRUP00001', True, False, 'INSGE00002', null);
+INSERT INTO MUSICOS VALUES ('10284209N', 'Muff', 'DcKagan', 'Calle Felicidad', '581392', 'Valencia', 676478, 'GRUP00001', True, False, 'INSBA00004', null);
+INSERT INTO MUSICOS VALUES ('69364011J', 'Diggy', 'Reez', 'Calle Pantomina', '24581', 'Lugo', 670878, 'GRUP00001', True, False, 'INSTR00001', null);
+INSERT INTO MUSICOS VALUES ('07459831B', 'Lurs', 'Alrich', 'Calle Pantomina', '24581', 'Lugo', 676478, 'GRUP00046', True, True, 'INSGE00004', 'COMP00005');
+INSERT INTO MUSICOS VALUES ('41679098Q', 'Jame', 'Hellfield', 'Calle Pantomina', '24581', 'Lugo', 676478, 'GRUP00046', True, False, 'INSGE00001', 'COMP00006');
+INSERT INTO MUSICOS VALUES ('43725876R', 'Hirk', 'Kammett', 'Calle Piedras', '581392', 'Valencia', 676478, 'GRUP00046', True, False, 'INSBS00004', null);
+INSERT INTO MUSICOS VALUES ('67904582A', 'Roberto', 'Trujillo', 'Calle del Cepillo', '23490', 'Cuenca', 676478, 'GRUP00046', True, False, 'INSBA00004', null);
+INSERT INTO MUSICOS VALUES ('20127703N', 'James', 'Bob', 'Calle Felicidad', '420420', 'Lugo', 676478, 'GRUP00017', True, False, 'INSBA00002', 'COMP00006');
+INSERT INTO MUSICOS VALUES ('30552843B', 'Loeb', 'Chuck', 'Calle del Cepillo', '23490', 'Cuenca', 676478, 'GRUP00017', True, False, 'INSTR00002', null);
+INSERT INTO MUSICOS VALUES ('14630059N', 'Nathan', 'West', 'Calle del Cepillo', '23490', 'Cuenca', 676478, 'GRUP00017', True, False, 'INSGE00004', null);
+INSERT INTO MUSICOS VALUES ('99339565N', 'Jarvey', 'Meson', 'Calle Piedras', '581392', 'Valencia', 676478, 'GRUP00017', True, False, 'INSPI00004', null);
