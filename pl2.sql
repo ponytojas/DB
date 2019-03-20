@@ -301,12 +301,12 @@ INSERT INTO MUSICOS VALUES ('30552843B', 'Loeb', 'Chuck', 'Calle del Cepillo', '
 INSERT INTO MUSICOS VALUES ('14630059N', 'Nathan', 'West', 'Calle del Cepillo', '23490', 'Cuenca', 676478, 'GRUP00017', True, False, 'INSGE00004', null);
 INSERT INTO MUSICOS VALUES ('99339565N', 'Jarvey', 'Meson', 'Calle Piedras', '581392', 'Valencia', 676478, 'GRUP00017', True, False, 'INSPI00004', null);
 /*Discos*/
-INSERT INTO DISCOS VALUES ('DISC00001','27/JULIO/1979','Highway to Heaven','Rock','GRUP00001',True,True);
-INSERT INTO DISCOS VALUES ('DISC00002','20/MARZO/1980','Roses for the win','Rock','GRUP00002',True,False);
-INSERT INTO DISCOS VALUES ('DISC00003','14/MAYO/1979','Rolling hard','Rock','GRUP00003',False,True);
-INSERT INTO DISCOS VALUES ('DISC00004','21/NOVIEMBRE/1984','Looking for a queen','Rock','GRUPO00004',True,True);
-INSERT INTO DISCOS VALUES ('DISC00005','8/ABRIL/1980','Beatles can be our better friends','GRUP00005',True,False);
-INSERT INTO DISCOS VALUES ('DISC00006','13/FEBRERO/1984','Two always was better for us','GRUP00006',False,True);
-INSERT INTO DISCOS VALUES ('DISC00007','26/AGOSTO/1977','Do you really know it?','GRUPO00007',True,False);
-INSERT INTO DISCOS VALUES ('DISC00008','2/OCTUBRE/1978','Come to fly into my zeppelin','GRUP00008',False,True);
-INSERT INTO DISCOS VALUES ('DISC00009','29/DICIEMBRE/1982','We are the best','GRUPO00009',True,True);
+INSERT INTO DISCOS VALUES ('DISC00001','1979-07-17','Highway to Heaven','Rock','GRUP00001',True,True);
+INSERT INTO DISCOS VALUES ('DISC00002','1980-03-20','Roses for the win','Rock','GRUP00002',True,False);
+INSERT INTO DISCOS VALUES ('DISC00003','1979-05-14','Rolling hard','Rock','GRUP00003',False,True);
+INSERT INTO DISCOS VALUES ('DISC00004','1984-11-21','Looking for a queen','Rock','GRUPO00004',True,True);
+INSERT INTO DISCOS VALUES ('DISC00005','1980-04-08','Beatles can be our better friends','GRUP00005',True,False);
+INSERT INTO DISCOS VALUES ('DISC00006','1984-02-13','Two always was better for us','GRUP00006',False,True);
+INSERT INTO DISCOS VALUES ('DISC00007','1977-08-26','Do you really know it?','GRUPO00007',True,False);
+INSERT INTO DISCOS VALUES ('DISC00008','1978-10-02','Come to fly into my zeppelin','GRUP00008',False,True);
+INSERT INTO DISCOS VALUES ('DISC00009','1982-12-29','We are the best','GRUPO00009',True,True);
