@@ -305,8 +305,8 @@ INSERT INTO DISCOS VALUES ('DISC00001','1979-07-17','Highway to Heaven','Rock','
 INSERT INTO DISCOS VALUES ('DISC00002','1980-03-20','Roses for the win','Rock','GRUP00002',True,False);
 INSERT INTO DISCOS VALUES ('DISC00003','1979-05-14','Rolling hard','Rock','GRUP00003',False,True);
 INSERT INTO DISCOS VALUES ('DISC00004','1984-11-21','Looking for a queen','Rock','GRUP00004',True,True);
-INSERT INTO DISCOS VALUES ('DISC00005','1980-04-08','Beatles can be our better friends','GRUP00005',True,False);
-INSERT INTO DISCOS VALUES ('DISC00006','1984-02-13','Two always was better for us','GRUP00006',False,True);
-INSERT INTO DISCOS VALUES ('DISC00007','1977-08-26','Do you really know it?','GRUP00007',True,False);
-INSERT INTO DISCOS VALUES ('DISC00008','1978-10-02','Come to fly into my zeppelin','GRUP00008',False,True);
-INSERT INTO DISCOS VALUES ('DISC00009','1982-12-29','We are the best','GRUP00009',True,True);
+INSERT INTO DISCOS VALUES ('DISC00005','1980-04-08','Beatles can be our better friends','Rock','GRUP00005',True,False);
+INSERT INTO DISCOS VALUES ('DISC00006','1984-02-13','Two always was better for us','Rock','GRUP00006',False,True);
+INSERT INTO DISCOS VALUES ('DISC00007','1977-08-26','Do you really know it?','Rock','GRUP00007',True,False);
+INSERT INTO DISCOS VALUES ('DISC00008','1978-10-02','Come to fly into my zeppelin','Rock','GRUP00008',False,True);
+INSERT INTO DISCOS VALUES ('DISC00009','1982-12-29','We are the best','Rock','GRUP00009',True,True);
