@@ -100,6 +100,7 @@ CREATE TABLE DISCOS(
 CREATE TABLE CANCIONES (
 CODIGO_CANCION varchar(10) PRIMARY KEY,
 DURACION float ,
+NOMBRE_CANCION varchar(20),
 ID_COMPOSITOR_CANCION varchar(10) ,
 CODIGO_DISCO_CANCION varchar(10),
 
@@ -209,57 +210,36 @@ INSERT INTO GRUPOS VALUES ('GRUP00002', 'Rock', 'Not Moving Stones');
 INSERT INTO GRUPOS VALUES ('GRUP00003', 'Rock', 'AB // CD');
 INSERT INTO GRUPOS VALUES ('GRUP00004', 'Rock', 'King');
 INSERT INTO GRUPOS VALUES ('GRUP00005', 'Rock', 'The Butterflies');
-INSERT INTO GRUPOS VALUES ('GRUP00006', 'Rock', 'U1');
-INSERT INTO GRUPOS VALUES ('GRUP00007', 'Rock', 'Velvet Upground');
-INSERT INTO GRUPOS VALUES ('GRUP00008', 'Rock', 'Led Parachute');
-INSERT INTO GRUPOS VALUES ('GRUP00009', 'Rock', 'Antonios');
-INSERT INTO GRUPOS VALUES ('GRUP00010', 'Rock', 'Blue Floyd');
-INSERT INTO GRUPOS VALUES ('GRUP00011', 'Rock', 'The Why');
-INSERT INTO GRUPOS VALUES ('GRUP00012', 'Rock', 'The Windows');
-INSERT INTO GRUPOS VALUES ('GRUP00013', 'Rock', 'Birds');
-INSERT INTO GRUPOS VALUES ('GRUP00014', 'Rock', 'Landsmith');
-INSERT INTO GRUPOS VALUES ('GRUP00015', 'Rock', 'White Sabbath');
-INSERT INTO GRUPOS VALUES ('GRUP00016', 'Rock', 'The Mountain Boys');
-INSERT INTO GRUPOS VALUES ('GRUP00017', 'Jazz', 'Threeplay');
-INSERT INTO GRUPOS VALUES ('GRUP00018', 'Jazz', 'Spyro Ungyra');
-INSERT INTO GRUPOS VALUES ('GRUP00019', 'Jazz', 'Earth, Wind and Water');
-INSERT INTO GRUPOS VALUES ('GRUP00020', 'Jazz', 'Art Tatto');
-INSERT INTO GRUPOS VALUES ('GRUP00021', 'Jazz', 'Benny Badman');
-INSERT INTO GRUPOS VALUES ('GRUP00022', 'Jazz', 'Lester Old');
-INSERT INTO GRUPOS VALUES ('GRUP00023', 'Reggae', 'Bob Harley');
-INSERT INTO GRUPOS VALUES ('GRUP00024', 'Reggae', 'Toots & The Apriltals');
-INSERT INTO GRUPOS VALUES ('GRUP00025', 'Reggae', 'Ziggy Harley');
-INSERT INTO GRUPOS VALUES ('GRUP00026', 'Reggae', 'UB39');
-INSERT INTO GRUPOS VALUES ('GRUP00027', 'Reggae', 'Sly and Free');
-INSERT INTO GRUPOS VALUES ('GRUP00028', 'Reggae', 'Redman');
-INSERT INTO GRUPOS VALUES ('GRUP00029', 'Reggae', 'Alpha GreenHead');
-INSERT INTO GRUPOS VALUES ('GRUP00030', 'Reggae', 'Ook-a-Mouse');
-INSERT INTO GRUPOS VALUES ('GRUP00031', 'Rap', 'Wi-Teng Clan');
-INSERT INTO GRUPOS VALUES ('GRUP00032', 'Rap', 'N.W.B');
-INSERT INTO GRUPOS VALUES ('GRUP00033', 'Rap', 'Run-CMD');
-INSERT INTO GRUPOS VALUES ('GRUP00034', 'Rap', 'A tribe called missinon');
-INSERT INTO GRUPOS VALUES ('GRUP00035', 'Rap', 'Public Friend');
-INSERT INTO GRUPOS VALUES ('GRUP00036', 'Rap', 'From The Soul');
-INSERT INTO GRUPOS VALUES ('GRUP00037', 'Rap', 'The Roofs');
-INSERT INTO GRUPOS VALUES ('GRUP00038', 'Rap', 'UnFugees');
-INSERT INTO GRUPOS VALUES ('GRUP00039', 'Rap', '4Life Crew');
-INSERT INTO GRUPOS VALUES ('GRUP00040', 'Rap', 'White Moon');
-INSERT INTO GRUPOS VALUES ('GRUP00041', 'Electronic', 'Daft Rock');
-INSERT INTO GRUPOS VALUES ('GRUP00042', 'Electronic', 'Crackwerk');
-INSERT INTO GRUPOS VALUES ('GRUP00043', 'Electronic', 'The Doctor Brothers');
-INSERT INTO GRUPOS VALUES ('GRUP00044', 'Electronic', 'The Unprodigy');
-INSERT INTO GRUPOS VALUES ('GRUP00045', 'Electronic', 'Boards of Alasca');
-INSERT INTO GRUPOS VALUES ('GRUP00046', 'Heavy Metal', 'Destallica');
-INSERT INTO GRUPOS VALUES ('GRUP00047', 'Heavy Metal', 'Dream Museum');
-INSERT INTO GRUPOS VALUES ('GRUP00048', 'Heavy Metal', 'Iron Waiden');
-INSERT INTO GRUPOS VALUES ('GRUP00049', 'Heavy Metal', 'Splayer');
-INSERT INTO GRUPOS VALUES ('GRUP00050', 'Heavy Metal', 'Megalife');
-INSERT INTO GRUPOS VALUES ('GRUP00051', 'Heavy Metal', 'Jesus Priest');
-INSERT INTO GRUPOS VALUES ('GRUP00052', 'Heavy Metal', 'Tiger');
-INSERT INTO GRUPOS VALUES ('GRUP00053', 'Heavy Metal', 'EngineHead');
-INSERT INTO GRUPOS VALUES ('GRUP00054', 'Heavy Metal', 'KornFlakes');
-INSERT INTO GRUPOS VALUES ('GRUP00055', 'Heavy Metal', 'Deep Yellow');
 
+INSERT INTO GRUPOS VALUES ('GRUP00006', 'Jazz', 'Threeplay');
+INSERT INTO GRUPOS VALUES ('GRUP00007', 'Jazz', 'Spyro Ungyra');
+INSERT INTO GRUPOS VALUES ('GRUP00008', 'Jazz', 'Earth, Wind and Water');
+INSERT INTO GRUPOS VALUES ('GRUP00009', 'Jazz', 'Art Tatto');
+INSERT INTO GRUPOS VALUES ('GRUP00010', 'Jazz', 'Benny Badman');
+
+INSERT INTO GRUPOS VALUES ('GRUP00011', 'Reggae', 'Bob Harley');
+INSERT INTO GRUPOS VALUES ('GRUP00012', 'Reggae', 'Toots & The Apriltals');
+INSERT INTO GRUPOS VALUES ('GRUP00013', 'Reggae', 'Ziggy Harley');
+INSERT INTO GRUPOS VALUES ('GRUP00014', 'Reggae', 'UB39');
+INSERT INTO GRUPOS VALUES ('GRUP00015', 'Reggae', 'Sly and Free');
+
+INSERT INTO GRUPOS VALUES ('GRUP00016', 'Rap', 'Wi-Teng Clan');
+INSERT INTO GRUPOS VALUES ('GRUP00017', 'Rap', 'N.W.B');
+INSERT INTO GRUPOS VALUES ('GRUP00018', 'Rap', 'Run-CMD');
+INSERT INTO GRUPOS VALUES ('GRUP00019', 'Rap', 'A tribe called missinon');
+INSERT INTO GRUPOS VALUES ('GRUP00020', 'Rap', 'Public Friend');
+
+INSERT INTO GRUPOS VALUES ('GRUP00021', 'Electronic', 'Daft Rock');
+INSERT INTO GRUPOS VALUES ('GRUP00022', 'Electronic', 'Crackwerk');
+INSERT INTO GRUPOS VALUES ('GRUP00023', 'Electronic', 'The Doctor Brothers');
+INSERT INTO GRUPOS VALUES ('GRUP00024', 'Electronic', 'The Unprodigy');
+INSERT INTO GRUPOS VALUES ('GRUP00025', 'Electronic', 'Boards of Alasca');
+
+INSERT INTO GRUPOS VALUES ('GRUP00026', 'Heavy Metal', 'Destallica');
+INSERT INTO GRUPOS VALUES ('GRUP00027', 'Heavy Metal', 'Dream Museum');
+INSERT INTO GRUPOS VALUES ('GRUP00028', 'Heavy Metal', 'Iron Waiden');
+INSERT INTO GRUPOS VALUES ('GRUP00029', 'Heavy Metal', 'Splayer');
+INSERT INTO GRUPOS VALUES ('GRUP00030', 'Heavy Metal', 'Megalife');
 
 /*Usuario*/
 INSERT INTO USUARIOS VALUES ('64510552Z', 'jose.lopez@jmail.com', 'Jose', 'Lopez', 2000);
@@ -282,8 +262,9 @@ INSERT INTO USUARIOS VALUES ('92644697F', 'ana.tirados@lycos.com', 'Ana', 'Tirad
 INSERT INTO USUARIOS VALUES ('59547081N', 'amelia.losada@witty.com', 'Amelia', 'Losada', 15);
 INSERT INTO USUARIOS VALUES ('86842356Z', 'joana.toro@lycos.com', 'Joana', 'Toro', 395);
 
+
 /*Musico*/
-INSERT INTO MUSICOS VALUES ('69860457G', 'Bob', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 692848, 'GRUP00023', True, True,'INSGE00003', 'COMP00001');
+INSERT INTO MUSICOS VALUES ('69860457G', 'Bob', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 692848, 'GRUP00011', True, True,'INSGE00003', 'COMP00001');
 INSERT INTO MUSICOS VALUES ('25801802B', 'Jim', 'Magger', 'Calle Piedras', '581392', 'Valencia', 673858, 'GRUP00002', True, True,'INSVO00001', 'COMP00002');
 INSERT INTO MUSICOS VALUES ('03892666P', 'Reith', 'Kichard', 'Calle Piedras', '581392', 'Valencia', 679858, 'GRUP00002', True, True, 'INSGE00001', 'COMP00003');
 INSERT INTO MUSICOS VALUES ('40684639P', 'Warlie', 'Catts', 'Calle Piedras', '581392', 'Valencia', 679878, 'GRUP00002', True, False, 'INSBA00003', null);
@@ -292,14 +273,26 @@ INSERT INTO MUSICOS VALUES ('60298840Q', 'Axel', 'Flower', 'Calle Cielo', '4750'
 INSERT INTO MUSICOS VALUES ('60853212L', 'Ash', 'Sl', 'Calle del Cepillo', '23490', 'Cuenca', 612878, 'GRUP00001', True, False, 'INSGE00002', null);
 INSERT INTO MUSICOS VALUES ('10284209N', 'Muff', 'DcKagan', 'Calle Felicidad', '581392', 'Valencia', 676478, 'GRUP00001', True, False, 'INSBA00004', null);
 INSERT INTO MUSICOS VALUES ('69364011J', 'Diggy', 'Reez', 'Calle Pantomina', '24581', 'Lugo', 670878, 'GRUP00001', True, False, 'INSSX00001', null);
-INSERT INTO MUSICOS VALUES ('07459831B', 'Lurs', 'Alrich', 'Calle Pantomina', '24581', 'Lugo', 676478, 'GRUP00046', True, True, 'INSGE00004', 'COMP00005');
-INSERT INTO MUSICOS VALUES ('41679098Q', 'Jame', 'Hellfield', 'Calle Pantomina', '24581', 'Lugo', 676478, 'GRUP00046', True, False, 'INSGE00001', 'COMP00006');
-INSERT INTO MUSICOS VALUES ('43725876R', 'Hirk', 'Kammett', 'Calle Piedras', '581392', 'Valencia', 676478, 'GRUP00046', True, False, 'INSBS00004', null);
-INSERT INTO MUSICOS VALUES ('67904582A', 'Roberto', 'Trujillo', 'Calle del Cepillo', '23490', 'Cuenca', 676478, 'GRUP00046', True, False, 'INSBA00004', null);
-INSERT INTO MUSICOS VALUES ('20127703N', 'James', 'Bob', 'Calle Felicidad', '420420', 'Lugo', 676478, 'GRUP00017', True, False, 'INSBA00002', 'COMP00007');
-INSERT INTO MUSICOS VALUES ('30552843B', 'Loeb', 'Chuck', 'Calle del Cepillo', '23490', 'Cuenca', 676478, 'GRUP00017', True, False, 'INSSX00002', null);
-INSERT INTO MUSICOS VALUES ('14630059N', 'Nathan', 'West', 'Calle del Cepillo', '23490', 'Cuenca', 676478, 'GRUP00017', True, False, 'INSGE00004', null);
-INSERT INTO MUSICOS VALUES ('99339565N', 'Jarvey', 'Meson', 'Calle Piedras', '581392', 'Valencia', 676478, 'GRUP00017', True, False, 'INSPI00004', null);
+INSERT INTO MUSICOS VALUES ('07459831B', 'Lurs', 'Alrich', 'Calle Pantomina', '24581', 'Lugo', 676478, 'GRUP00026', True, True, 'INSGE00004', 'COMP00005');
+INSERT INTO MUSICOS VALUES ('41679098Q', 'Jame', 'Hellfield', 'Calle Pantomina', '24581', 'Lugo', 676278, 'GRUP00026', True, False, 'INSGE00001', 'COMP00006');
+INSERT INTO MUSICOS VALUES ('43725876R', 'Hirk', 'Kammett', 'Calle Piedras', '581392', 'Valencia', 671478, 'GRUP00026', True, False, 'INSBS00004', null);
+INSERT INTO MUSICOS VALUES ('67904582A', 'Roberto', 'Trujillo', 'Calle del Cepillo', '23490', 'Cuenca', 606478, 'GRUP00026', True, False, 'INSBA00004', null);
+INSERT INTO MUSICOS VALUES ('20127703N', 'James', 'Bob', 'Calle Felicidad', '420420', 'Lugo', 676471, 'GRUP00006', True, False, 'INSBA00002', 'COMP00007');
+INSERT INTO MUSICOS VALUES ('30552843B', 'Loeb', 'Chuck', 'Calle del Cepillo', '23490', 'Cuenca', 645478, 'GRUP00006', True, False, 'INSSX00002', null);
+INSERT INTO MUSICOS VALUES ('14630059N', 'Nathan', 'West', 'Calle del Cepillo', '23490', 'Cuenca', 673178, 'GRUP00006', True, False, 'INSGE00004', null);
+INSERT INTO MUSICOS VALUES ('99339565N', 'Jarvey', 'Meson', 'Calle Piedras', '581392', 'Valencia', 676458, 'GRUP00006', True, False, 'INSPI00004', null);
+INSERT INTO MUSICOS VALUES ('04116506N', 'John', 'Brianson', 'Calle Pantomina', '24581', 'Lugo', 676228, 'GRUP00003', True, True, 'INSGE00004', 'COMP00008');
+INSERT INTO MUSICOS VALUES ('18930909T', 'Angus', 'Old', 'Calle Pantomina', '24581', 'Lugo', 676291, 'GRUP00003', True, False, 'INSGE00004', null);
+INSERT INTO MUSICOS VALUES ('35508934Q', 'Stevie', 'Old', 'Calle Pantomina', '24581', 'Lugo', 641228, 'GRUP00003', True, False, 'INSBA00002', null);
+INSERT INTO MUSICOS VALUES ('84567677N', 'Phil', 'Rude', 'Calle Pantomina', '24581', 'Lugo', 693228, 'GRUP00003', True, False, 'INSBS00004', null);
+INSERT INTO MUSICOS VALUES ('70307152Q', 'Freddie', 'Oxygen', 'Calle Felicidad', '420420', 'Lugo', 645628, 'GRUP00004', True, True, 'INSVO00001', 'COMP00009');
+INSERT INTO MUSICOS VALUES ('22138391V', 'Brian', 'April', 'Calle del Cepillo', '23490', 'Cuenca', 645628, 'GRUP00004', True, False, 'INSGE00001', null);
+INSERT INTO MUSICOS VALUES ('04681379M', 'Tayger', 'Rolor', 'Calle Felicidad', '420420', 'Lugo', 645628, 'GRUP00004', True, False, 'INSBA00001', null);
+INSERT INTO MUSICOS VALUES ('77939246C', 'John', 'Orangenn', 'Calle Piedras', '581392', 'Valencia', 614528, 'GRUP00005', True, True, 'INSGE00002', 'COMP00010');
+INSERT INTO MUSICOS VALUES ('89723090K', 'Paul', 'McPaulFace', 'Calle Piedras', '581392', 'Valencia', 685428, 'GRUP00005', True, False, 'INSGE00005', null);
+INSERT INTO MUSICOS VALUES ('78115588K', 'George', 'Ford', 'Calle Piedras', '581392', 'Valencia', 601928, 'GRUP00005', True, False, 'INSBA00002', null);
+INSERT INTO MUSICOS VALUES ('75747011F', 'Ringo', 'Monn', 'Calle Piedras', '581392', 'Valencia', 692528, 'GRUP00005', True, False, 'INSBS00002', null);
+
 
 /*Discos*/
 INSERT INTO DISCOS VALUES ('DISC00001','1979-07-17','Highway to Heaven','Rock','GRUP00001',True,True);
@@ -307,36 +300,37 @@ INSERT INTO DISCOS VALUES ('DISC00002','1980-03-20','Roses for the win','Rock','
 INSERT INTO DISCOS VALUES ('DISC00003','1979-05-14','Rolling hard','Rock','GRUP00003',False,True);
 INSERT INTO DISCOS VALUES ('DISC00004','1984-11-21','Looking for a queen','Rock','GRUP00004',True,True);
 INSERT INTO DISCOS VALUES ('DISC00005','1980-04-08','Beatles can be our better friends','Rock','GRUP00005',True,False);
-INSERT INTO DISCOS VALUES ('DISC00006','1984-02-13','Two always was better for us','Rock','GRUP00006',False,True);
-INSERT INTO DISCOS VALUES ('DISC00007','1977-08-26','Do you really know it?','Rock','GRUP00007',True,False);
-INSERT INTO DISCOS VALUES ('DISC00008','1978-10-02','Come to fly into my zeppelin','Rock','GRUP00008',False,True);
-INSERT INTO DISCOS VALUES ('DISC00009','1982-12-29','We are the best','Rock','GRUP00009',True,True);
-INSERT INTO DISCOS VALUES ('DISC00010','1984-06-11','Pinky','Rock','GRUP00010',True,False);
-INSERT INTO DISCOS VALUES ('DISC00011','1990-03-24','Sounds of the soul','Jazz','GRUP00017',False,True);
-INSERT INTO DISCOS VALUES ('DISC00012','1987-01-02','Trumpets from our lifes','Jazz','GRUP00018',True,True);
-INSERT INTO DISCOS VALUES ('DISC00013','1994-08-12','Fire','Jazz','GRUP00019',True,False);
-INSERT INTO DISCOS VALUES ('DISC00014','1990-09-30','What are you looking?','Jazz','GRUP00020',False,True);
-INSERT INTO DISCOS VALUES ('DISC00015','1992-04-04','The good guy','Jazz','GRUP00021',True,True);
-INSERT INTO DISCOS VALUES ('DISC00016','1989-05-16','The seed','Reggae','GRUP00023',True,False);
-INSERT INTO DISCOS VALUES ('DISC00017','1993-05-18','We just gonna have fun','Reggae','GRUP00024',False,True);
-INSERT INTO DISCOS VALUES ('DISC00018','1990-09-29','How about your name?','Reggae','GRUP00025',True,True);
-INSERT INTO DISCOS VALUES ('DISC00019','1991-06-13','Try to follow me','Reggae','GRUP00026',True,False);
-INSERT INTO DISCOS VALUES ('DISC00020','1991-07-01','Smoke','Rap','GRUP00031',False,True);
-INSERT INTO DISCOS VALUES ('DISC00021','1994-08-05','B.R.O','Rap','GRUP00032',True,True);
-INSERT INTO DISCOS VALUES ('DISC00022','1992-11-10','Dont try to change me','Rap','GRUP00033',True,False);
-INSERT INTO DISCOS VALUES ('DISC00023','1995-03-01','Here we get the triumph','Rap','GRUP00034',False,True);
-INSERT INTO DISCOS VALUES ('DISC00024','1994-04-04','How to be a friendly enemy','Rap','GRUP00035',True,True);
-INSERT INTO DISCOS VALUES ('DISC00025','1994-03-28','Is this the end?','Rap','GRUP00036',True,False);
-INSERT INTO DISCOS VALUES ('DISC00026','1998-05-11','F*ck punk','Electronic','GRUP00041',False,True);
-INSERT INTO DISCOS VALUES ('DISC00027','1997-06-14','Move your body','Electronic','GRUP00042',True,True);
-INSERT INTO DISCOS VALUES ('DISC00028','1999-03-11','Take my medicine','Electronic','GRUP00043',True,False);
-INSERT INTO DISCOS VALUES ('DISC00029','1999-04-23','Lights up','Electronic','GRUP00044',False,True);
-INSERT INTO DISCOS VALUES ('DISC00030','1998-06-01)','Hard steel','Heavy Metal','GRUP00046',True,True);
-INSERT INTO DISCOS VALUES ('DISC00031','1997-10-17','Rekkles','Heavy Metal','GRUP00047',True,False);
-INSERT INTO DISCOS VALUES ('DISC00032','1999-12-21','Slay the guitar','Heavy Metal','GRUP00047',False,True);
-INSERT INTO DISCOS VALUES ('DISC00033','2000-02-24','Dragonfire','Heavy Metal','GRUP00052',True,True);
-INSERT INTO DISCOS VALUES ('DISC00034','2001-12-29','Milkshake','Heavy Metal','GRUP00054',True,False);
 
+INSERT INTO DISCOS VALUES ('DISC00011','1990-03-24','Sounds of the soul','Jazz','GRUP00006',False,True);
+INSERT INTO DISCOS VALUES ('DISC00012','1987-01-02','Trumpets from our lifes','Jazz','GRUP00006',True,True);
+INSERT INTO DISCOS VALUES ('DISC00013','1994-08-12','Fire','Jazz','GRUP00006',True,False);
+INSERT INTO DISCOS VALUES ('DISC00014','1990-09-30','What are you looking?','Jazz','GRUP00007',False,True);
+INSERT INTO DISCOS VALUES ('DISC00015','1992-04-04','The good guy','Jazz','GRUP00007',True,True);
+
+INSERT INTO DISCOS VALUES ('DISC00016','1989-05-16','The seed','Reggae','GRUP00011',True,False);
+INSERT INTO DISCOS VALUES ('DISC00017','1993-05-18','We just gonna have fun','Reggae','GRUP00012',False,True);
+INSERT INTO DISCOS VALUES ('DISC00018','1990-09-29','How about your name?','Reggae','GRUP00012',True,True);
+INSERT INTO DISCOS VALUES ('DISC00019','1991-06-13','Try to follow me','Reggae','GRUP00013',True,False);
+
+INSERT INTO DISCOS VALUES ('DISC00020','1991-07-01','Smoke','Rap','GRUP00016',False,True);
+INSERT INTO DISCOS VALUES ('DISC00021','1994-08-05','B.R.O','Rap','GRUP00016',True,True);
+INSERT INTO DISCOS VALUES ('DISC00022','1992-11-10','Dont try to change me','Rap','GRUP00016',True,False);
+INSERT INTO DISCOS VALUES ('DISC00023','1995-03-01','Here we get the triumph','Rap','GRUP00017',False,True);
+INSERT INTO DISCOS VALUES ('DISC00024','1994-04-04','How to be a friendly enemy','Rap','GRUP00018',True,True);
+INSERT INTO DISCOS VALUES ('DISC00025','1994-03-28','Is this the end?','Rap','GRUP00019',True,False);
+
+INSERT INTO DISCOS VALUES ('DISC00026','1998-05-11','F*ck punk','Electronic','GRUP00021',False,True);
+INSERT INTO DISCOS VALUES ('DISC00027','1997-06-14','Move your body','Electronic','GRUP00022',True,True);
+INSERT INTO DISCOS VALUES ('DISC00028','1999-03-11','Take my medicine','Electronic','GRUP00022',True,False);
+INSERT INTO DISCOS VALUES ('DISC00029','1999-04-23','Lights up','Electronic','GRUP00024',False,True);
+
+INSERT INTO DISCOS VALUES ('DISC00030','1998-06-01)','Hard steel','Heavy Metal','GRUP00026',True,True);
+INSERT INTO DISCOS VALUES ('DISC00031','1997-10-17','Rekkles','Heavy Metal','GRUP00027',True,False);
+INSERT INTO DISCOS VALUES ('DISC00032','1999-12-21','Slay the guitar','Heavy Metal','GRUP00027',False,True);
+INSERT INTO DISCOS VALUES ('DISC00033','2000-02-24','Dragonfire','Heavy Metal','GRUP00028',True,True);
+INSERT INTO DISCOS VALUES ('DISC00034','2001-12-29','Milkshake','Heavy Metal','GRUP00028',True,False);
+
+/*
 /*Canciones*/
 INSERT INTO CANCIONES VALUES ('SONG00001','2.32','COMP00001','DISC00001');
 INSERT INTO CANCIONES VALUES ('SONG00002','2.30','COMP00001','DISC00001');
@@ -362,5 +356,4 @@ INSERT INTO CANCIONES VALUES ('SONG00021','2.11','COMP00011','DISC00007');
 INSERT INTO CANCIONES VALUES ('SONG00022','2.58','COMP00011','DISC00008');
 INSERT INTO CANCIONES VALUES ('SONG00023','2.41','COMP00012','DISC00008');
 INSERT INTO CANCIONES VALUES ('SONG00024','2.56','COMP00013','DISC00008');
-
-
+*/
