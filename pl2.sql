@@ -264,8 +264,6 @@ INSERT INTO USUARIOS VALUES ('86842356Z', 'joana.toro@lycos.com', 'Joana', 'Toro
 
 
 /*Musico*/
-INSERT INTO MUSICOS VALUES ('69860457G', 'Bob', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 692848, 'GRUP00011', True, True,'INSGE00003', 'COMP00001');
-
 INSERT INTO MUSICOS VALUES ('25801802B', 'Jim', 'Magger', 'Calle Piedras', '581392', 'Valencia', 673858, 'GRUP00002', True, True,'INSVO00001', 'COMP00002');
 INSERT INTO MUSICOS VALUES ('03892666P', 'Reith', 'Kichard', 'Calle Piedras', '581392', 'Valencia', 679858, 'GRUP00002', True, True, 'INSGE00001', 'COMP00003');
 INSERT INTO MUSICOS VALUES ('40684639P', 'Warlie', 'Catts', 'Calle Piedras', '581392', 'Valencia', 679878, 'GRUP00002', True, False, 'INSBA00003', null);
@@ -276,7 +274,7 @@ INSERT INTO MUSICOS VALUES ('60853212L', 'Ash', 'Sl', 'Calle del Cepillo', '2349
 INSERT INTO MUSICOS VALUES ('10284209N', 'Muff', 'DcKagan', 'Calle Felicidad', '581392', 'Valencia', 676478, 'GRUP00001', True, False, 'INSBA00004', null);
 INSERT INTO MUSICOS VALUES ('69364011J', 'Diggy', 'Reez', 'Calle Pantomina', '24581', 'Lugo', 670878, 'GRUP00001', True, False, 'INSSX00001', null);
 
-INSERT INTO MUSICOS VALUES ('07459831B', 'Lurs', 'Alrich', 'Calle Pantomina', '24581', 'Lugo', 676478, 'GRUP00026', True, True, 'INSGE00004', 'COMP00005');
+INSERT INTO MUSICOS VALUES ('07459831B', 'Lurs', 'Alrich', 'Calle Pantomina', '24581', 'Lugo', 676788, 'GRUP00026', True, True, 'INSGE00004', 'COMP00005');
 INSERT INTO MUSICOS VALUES ('41679098Q', 'Jame', 'Hellfield', 'Calle Pantomina', '24581', 'Lugo', 676278, 'GRUP00026', True, False, 'INSGE00001', 'COMP00006');
 INSERT INTO MUSICOS VALUES ('43725876R', 'Hirk', 'Kammett', 'Calle Piedras', '581392', 'Valencia', 671478, 'GRUP00026', True, False, 'INSBS00004', null);
 INSERT INTO MUSICOS VALUES ('67904582A', 'Roberto', 'Trujillo', 'Calle del Cepillo', '23490', 'Cuenca', 606478, 'GRUP00026', True, False, 'INSBA00004', null);
@@ -292,8 +290,8 @@ INSERT INTO MUSICOS VALUES ('35508934Q', 'Stevie', 'Old', 'Calle Pantomina', '24
 INSERT INTO MUSICOS VALUES ('84567677N', 'Phil', 'Rude', 'Calle Pantomina', '24581', 'Lugo', 693228, 'GRUP00003', True, False, 'INSBS00004', null);
 
 INSERT INTO MUSICOS VALUES ('70307152Q', 'Freddie', 'Oxygen', 'Calle Felicidad', '420420', 'Lugo', 645628, 'GRUP00004', True, True, 'INSVO00001', 'COMP00009');
-INSERT INTO MUSICOS VALUES ('22138391V', 'Brian', 'April', 'Calle del Cepillo', '23490', 'Cuenca', 645628, 'GRUP00004', True, False, 'INSGE00001', null);
-INSERT INTO MUSICOS VALUES ('04681379M', 'Tayger', 'Rolor', 'Calle Felicidad', '420420', 'Lugo', 645628, 'GRUP00004', True, False, 'INSBA00001', null);
+INSERT INTO MUSICOS VALUES ('22138391V', 'Brian', 'April', 'Calle del Cepillo', '23490', 'Cuenca', 686628, 'GRUP00004', True, False, 'INSGE00001', null);
+INSERT INTO MUSICOS VALUES ('04681379M', 'Tayger', 'Rolor', 'Calle Felicidad', '420420', 'Lugo', 648128, 'GRUP00004', True, False, 'INSBA00001', null);
 
 INSERT INTO MUSICOS VALUES ('77939246C', 'John', 'Orangenn', 'Calle Piedras', '581392', 'Valencia', 614528, 'GRUP00005', True, True, 'INSGE00002', 'COMP00010');
 INSERT INTO MUSICOS VALUES ('89723090K', 'Paul', 'McPaulFace', 'Calle Piedras', '581392', 'Valencia', 685428, 'GRUP00005', True, False, 'INSGE00005', null);
@@ -314,6 +312,28 @@ INSERT INTO MUSICOS VALUES ('86471999A', 'Charles', 'Mingus', 'Calle Felicidad',
 
 INSERT INTO MUSICOS VALUES ('00723665Q', 'Sonny', 'Rollins', 'Calle del Cepillo', '23490', 'Cuenca', 693789, 'GRUP00010', True, True, 'INSVO00001', 'COMP00014');
 INSERT INTO MUSICOS VALUES ('92043066X', 'Billie', 'Holliday', 'Calle Pantomina', '24581', 'Lugo', 602859, 'GRUP00010', True, False, 'INSBA00003', null);
+
+INSERT INTO MUSICOS VALUES ('69860457G', 'Bob', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 692848, 'GRUP00011', True, True,'INSGE00003', 'COMP00001');
+
+INSERT INTO MUSICOS VALUES ('23423003X', 'Frederik', 'Hibberts', 'Calle Felicidad', '420420', 'Lugo', 685738, 'GRUP00012', True, True,'INSGE00003', 'COMP00015');
+INSERT INTO MUSICOS VALUES ('50245332S', 'Paul', 'Douglas', 'Calle Felicidad', '420420', 'Lugo', 699875, 'GRUP00012', True, False,'INSBS00003', null);
+INSERT INTO MUSICOS VALUES ('92524441H', 'Carl', 'Harvey', 'Calle Felicidad', '420420', 'Lugo', 699848, 'GRUP00012', True, False,'INSBS00002', null);
+INSERT INTO MUSICOS VALUES ('11621162K', 'Jackie', 'Jackson', 'Calle Felicidad', '420420', 'Lugo', 688748, 'GRUP00012', True, False,'INSPI00001', null);
+INSERT INTO MUSICOS VALUES ('69893479K', 'Leba', 'Thomas', 'Calle Felicidad', '420420', 'Lugo', 699948, 'GRUP00012', True, False,'INSSX00003', null);
+
+INSERT INTO MUSICOS VALUES ('37720651F', 'Ziggy', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 644988, 'GRUP00013', True, True,'INSVO00001', 'COMP00016');
+INSERT INTO MUSICOS VALUES ('19289235D', 'Rita', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 696578, 'GRUP00013', True, False,'INSGE00001', null);
+INSERT INTO MUSICOS VALUES ('85422439W', 'Damian', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 694228, 'GRUP00013', True, False,'INSBS00001', null);
+INSERT INTO MUSICOS VALUES ('16573214N', 'Kymani', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 695878, 'GRUP00013', True, False,'INSCJ00001', null);
+
+INSERT INTO MUSICOS VALUES ('89893693X', 'Jimmy', 'Brown', 'Calle Felicidad', '420420', 'Lugo', 611578, 'GRUP00014', True, False,'INSGU00002', null);
+INSERT INTO MUSICOS VALUES ('27660073C', 'Duncan', 'Campbell', 'Calle Felicidad', '420420', 'Lugo', 614538, 'GRUP00014', True, False,'INSBS00001', null);
+INSERT INTO MUSICOS VALUES ('52257819W', 'Earl', 'Falconer', 'Calle Felicidad', '420420', 'Lugo', 612879, 'GRUP00014', True, False,'INSCJ00002', null);
+
+INSERT INTO MUSICOS VALUES ('64047104Q', 'Sly', 'Dumbar', 'Calle Felicidad', '420420', 'Lugo', 624538, 'GRUP00015', True, False,'INSBS00004', null);
+INSERT INTO MUSICOS VALUES ('21207485J', 'Robbie', 'Shakespeare', 'Calle Felicidad', '420420', 'Lugo', 622879, 'GRUP00015', True, True,'INSCJ00005', 'COMP00017');
+
+
 
 /*Discos*/
 INSERT INTO DISCOS VALUES ('DISC00001','1979-07-17','Highway to Heaven','Rock','GRUP00001',True,True);
