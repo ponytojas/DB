@@ -214,6 +214,7 @@ INSERT INTO COMPOSITORES VALUES ('COMP00027');
 INSERT INTO COMPOSITORES VALUES ('COMP00028');
 INSERT INTO COMPOSITORES VALUES ('COMP00029');
 INSERT INTO COMPOSITORES VALUES ('COMP00030');
+INSERT INTO COMPOSITORES VALUES ('COMP00031');
 
 /*Grupo*/
 INSERT INTO GRUPOS VALUES ('GRUP00001', 'Rock', 'Guns and Carnations');
@@ -393,6 +394,16 @@ INSERT INTO MUSICOS VALUES ('55295671Z', 'Dave', 'Murray', 'Calle Piedras', '581
 INSERT INTO MUSICOS VALUES ('63870556Q', 'Adrian', 'Smith', 'Calle Piedras', '581392', 'Valencia', 699000, 'GRUP00028', True, False,'INSSX00001', null);
 INSERT INTO MUSICOS VALUES ('89246502Q', 'Nicko', 'McBrain', 'Calle Piedras', '581392', 'Valencia', 666648, 'GRUP00028', True, False, 'INSBA00003', null);
 INSERT INTO MUSICOS VALUES ('04430110B', 'Janick', 'Gers', 'Calle Piedras', '581392', 'Valencia', 644458, 'GRUP00028', True, False, 'INSBA00002', null);
+
+INSERT INTO MUSICOS VALUES ('91561434K', 'Tom', 'Aray', 'Calle Piedras', '581392', 'Valencia', 699991, 'GRUP00029', True, True,'INSBS00002', 'COMP00030');
+INSERT INTO MUSICOS VALUES ('43877397K', 'Kerry', 'King', 'Calle Piedras', '581392', 'Valencia', 681760, 'GRUP00029', True, False,'INSGE00004', null);
+INSERT INTO MUSICOS VALUES ('57410420M', 'Paul', 'Bostaph', 'Calle Piedras', '581392', 'Valencia', 663448, 'GRUP00029', True, False, 'INSGE00003', null);
+INSERT INTO MUSICOS VALUES ('75518139P', 'Gary', 'Holt', 'Calle Piedras', '581392', 'Valencia', 699100, 'GRUP00029', True, False, 'INSBA00002', null);
+
+INSERT INTO MUSICOS VALUES ('37149259G', 'Dave', 'Mustaine', 'Calle Piedras', '581392', 'Valencia', 661781, 'GRUP00030', True, True,'INSVO00001', 'COMP00031');
+INSERT INTO MUSICOS VALUES ('55728668J', 'David', 'Ellefson', 'Calle Piedras', '581392', 'Valencia', 699016, 'GRUP00030', True, False,'INSGE00004', null);
+INSERT INTO MUSICOS VALUES ('82253991B', 'Kiko', 'Loureiro', 'Calle Piedras', '581392', 'Valencia', 669948, 'GRUP00030', True, False, 'INSGE00003', null);
+INSERT INTO MUSICOS VALUES ('05856287G', 'Dirk', 'Verbeuren', 'Calle Piedras', '581392', 'Valencia', 691111, 'GRUP00030', True, False, 'INSBA00002', null);
 
 /*Discos*/
 INSERT INTO DISCOS VALUES ('DISC00001','1979-07-17','Highway to Heaven','Rock','GRUP00001',True,True);
