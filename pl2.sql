@@ -212,6 +212,8 @@ INSERT INTO COMPOSITORES VALUES ('COMP00025');
 INSERT INTO COMPOSITORES VALUES ('COMP00026');
 INSERT INTO COMPOSITORES VALUES ('COMP00027');
 INSERT INTO COMPOSITORES VALUES ('COMP00028');
+INSERT INTO COMPOSITORES VALUES ('COMP00029');
+INSERT INTO COMPOSITORES VALUES ('COMP00030');
 
 /*Grupo*/
 INSERT INTO GRUPOS VALUES ('GRUP00001', 'Rock', 'Guns and Carnations');
@@ -362,6 +364,35 @@ INSERT INTO MUSICOS VALUES ('44196518V', 'Terminator', 'X', 'Calle Pantomina', '
 INSERT INTO MUSICOS VALUES ('19397488R', 'DJ', 'Lord', 'Calle Piedras', '581392', 'Valencia', 612003, 'GRUP00020', True, False,'INSVO00001', null);
 INSERT INTO MUSICOS VALUES ('46903490G', 'Duck', 'D', 'Calle Piedras', '581392', 'Valencia', 612903, 'GRUP00020', True, False,'INSVO00001', null);
 
+INSERT INTO MUSICOS VALUES ('14673528B', 'Guy-Manuel', 'de Homem-Christo', 'Calle Piedras', '581392', 'Valencia', 623098, 'GRUP00021', True, True, 'INSVO00001', 'COMP00023');
+INSERT INTO MUSICOS VALUES ('64766023R', 'Thomas', 'Bangalter', 'Calle Piedras', '581392', 'Valencia', 623118, 'GRUP00021', True, False, 'INSVO00001', null);
+
+INSERT INTO MUSICOS VALUES ('18567904G', 'Ralf', 'Hütter', 'Calle del Cepillo', '23490', 'Cuenca', 689522, 'GRUP00022', True, True,'INSVO00001', 'COMP00024');
+INSERT INTO MUSICOS VALUES ('25353448L', 'Fritz', 'Hilpert', 'Calle Pantomina', '24581', 'Lugo', 699883, 'GRUP00022', True, False,'INSVO00001', null);
+INSERT INTO MUSICOS VALUES ('43811846C', 'Henning', 'Schmitz', 'Calle Piedras', '581392', 'Valencia', 611113, 'GRUP00022', True, False,'INSVO00001', null);
+INSERT INTO MUSICOS VALUES ('73946694S', 'Falk', 'Grieffenhagen', 'Calle Piedras', '581392', 'Valencia', 622203, 'GRUP00022', True, False,'INSVO00001', null);
+
+INSERT INTO MUSICOS VALUES ('48702760F', 'Tom', 'Rowlands', 'Calle Piedras', '581392', 'Valencia', 634498, 'GRUP00023', True, True, 'INSVO00001', 'COMP00025');
+INSERT INTO MUSICOS VALUES ('44566679Q', 'Ed', 'Simons', 'Calle Piedras', '581392', 'Valencia', 645518, 'GRUP00023', True, False, 'INSVO00001', null);
+
+INSERT INTO MUSICOS VALUES ('53217462Q', 'Maxim', 'Reality', 'Calle Piedras', '581392', 'Valencia', 635568, 'GRUP00024', True, True, 'INSVO00001', 'COMP00026');
+INSERT INTO MUSICOS VALUES ('01621055S', 'Liam', 'Howlett', 'Calle Piedras', '581392', 'Valencia', 649988, 'GRUP00024', True, False, 'INSVO00001', null);
+
+INSERT INTO MUSICOS VALUES ('17460286C', 'Mike', 'Sandison', 'Calle Piedras', '581392', 'Valencia', 699108, 'GRUP00025', True, True, 'INSVO00001', 'COMP00027');
+INSERT INTO MUSICOS VALUES ('92800631R', 'Marcus', 'Eoin', 'Calle Piedras', '581392', 'Valencia', 649918, 'GRUP00025', True, False, 'INSVO00001', null);
+
+INSERT INTO MUSICOS VALUES ('70155839C', 'James', 'LaBrie', 'Calle del Cepillo', '23490', 'Cuenca', 611122, 'GRUP00027', True, True,'INSVO00001', 'COMP00028');
+INSERT INTO MUSICOS VALUES ('85968264Z', 'John', 'Petrucci', 'Calle Pantomina', '24581', 'Lugo', 614453, 'GRUP00027', True, False,'INSGE00001', null);
+INSERT INTO MUSICOS VALUES ('45080967R', 'John', 'Myung', 'Calle Piedras', '581392', 'Valencia', 622313, 'GRUP00027', True, False,'INSBS00002', null);
+INSERT INTO MUSICOS VALUES ('81771491M', 'Jordan', 'Rudess', 'Calle Piedras', '581392', 'Valencia', 699103, 'GRUP00027', True, False,'INSSX00001', null);
+INSERT INTO MUSICOS VALUES ('88410147X', 'Mike', 'Mangini', 'Calle Piedras', '581392', 'Valencia', 668298, 'GRUP00027', True, False, 'INSBA00003', null);
+
+INSERT INTO MUSICOS VALUES ('81234005Y', 'Steve', 'Harrys', 'Calle del Cepillo', '23490', 'Cuenca', 619172, 'GRUP00028', True, True,'INSVO00001', 'COMP00029');
+INSERT INTO MUSICOS VALUES ('77083053W', 'Bruce', 'Dickinson', 'Calle Pantomina', '24581', 'Lugo', 636553, 'GRUP00028', True, False,'INSGE00001', null);
+INSERT INTO MUSICOS VALUES ('55295671Z', 'Dave', 'Murray', 'Calle Piedras', '581392', 'Valencia', 622991, 'GRUP00028', True, False,'INSBS00002', null);
+INSERT INTO MUSICOS VALUES ('63870556Q', 'Adrian', 'Smith', 'Calle Piedras', '581392', 'Valencia', 699000, 'GRUP00028', True, False,'INSSX00001', null);
+INSERT INTO MUSICOS VALUES ('89246502Q', 'Nicko', 'McBrain', 'Calle Piedras', '581392', 'Valencia', 666648, 'GRUP00028', True, False, 'INSBA00003', null);
+INSERT INTO MUSICOS VALUES ('04430110B', 'Janick', 'Gers', 'Calle Piedras', '581392', 'Valencia', 644458, 'GRUP00028', True, False, 'INSBA00002', null);
 
 /*Discos*/
 INSERT INTO DISCOS VALUES ('DISC00001','1979-07-17','Highway to Heaven','Rock','GRUP00001',True,True);
