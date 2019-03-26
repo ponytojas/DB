@@ -1,4 +1,4 @@
-truncate table canciones;
+truncate table canciones cascade;
 truncate table compositores cascade;
 truncate table conciertos cascade;
 truncate table discos cascade;
