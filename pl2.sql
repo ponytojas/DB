@@ -298,35 +298,35 @@ INSERT INTO MUSICOS VALUES ('82253991B', 'Kiko', 'Loureiro', 'Calle Piedras', '5
 INSERT INTO MUSICOS VALUES ('05856287G', 'Dirk', 'Verbeuren', 'Calle Piedras', '581392', 'Valencia', 691111, 'GRUP00030', True, False, 'INSBA00002', null);
 
 /*Discos*/
-INSERT INTO DISCOS VALUES ('DISC00001','1979-07-17','Highway to Heaven','Rock','GRUP00003',True,True);
-INSERT INTO DISCOS VALUES ('DISC00002','1980-03-20','Roses for the win','Rock','GRUP00001',True,False);
-INSERT INTO DISCOS VALUES ('DISC00003','1979-05-14','Rolling hard','Rock','GRUP00001',False,True);
-INSERT INTO DISCOS VALUES ('DISC00004','1984-11-21','Looking for a queen','Rock','GRUP00004',True,True);
+INSERT INTO DISCOS VALUES ('DISC00001','1979-07-17','Highway to Heaven','Rock','GRUP00003',True,True, 15);
+INSERT INTO DISCOS VALUES ('DISC00002','1980-03-20','Roses for the win','Rock','GRUP00001',True,False, null);
+INSERT INTO DISCOS VALUES ('DISC00003','1979-05-14','Rolling hard','Rock','GRUP00001',False,True, 23);
+INSERT INTO DISCOS VALUES ('DISC00004','1984-11-21','Looking for a queen','Rock','GRUP00004',True,True, 19);
 
 
-INSERT INTO DISCOS VALUES ('DISC00005','1990-03-24','Sounds of the soul','Jazz','GRUP00006',False,True);
-INSERT INTO DISCOS VALUES ('DISC00006','1987-01-02','Trumpets from our lifes','Jazz','GRUP00006',True,True);
+INSERT INTO DISCOS VALUES ('DISC00005','1990-03-24','Sounds of the soul','Jazz','GRUP00006',False,True, 40);
+INSERT INTO DISCOS VALUES ('DISC00006','1987-01-02','Trumpets from our lifes','Jazz','GRUP00006',True,True, 31);
 INSERT INTO DISCOS VALUES ('DISC00007','1994-08-12','Fire','Jazz','GRUP00006',True,False);
 
 
-INSERT INTO DISCOS VALUES ('DISC00008','1989-05-16','The seed','Reggae','GRUP00011',True,False);
-INSERT INTO DISCOS VALUES ('DISC00009','1993-05-18','We just gonna have fun','Reggae','GRUP00012',False,True);
-INSERT INTO DISCOS VALUES ('DISC00010','1990-09-29','How about your name?','Reggae','GRUP00012',True,True);
+INSERT INTO DISCOS VALUES ('DISC00008','1989-05-16','The seed','Reggae','GRUP00011',True,False, null);
+INSERT INTO DISCOS VALUES ('DISC00009','1993-05-18','We just gonna have fun','Reggae','GRUP00012',False,True, 18);
+INSERT INTO DISCOS VALUES ('DISC00010','1990-09-29','How about your name?','Reggae','GRUP00012',True,True, 24);
 
 
-INSERT INTO DISCOS VALUES ('DISC00011','1991-07-01','Smoke','Rap','GRUP00016',False,True);
-INSERT INTO DISCOS VALUES ('DISC00012','1994-08-05','B.R.O','Rap','GRUP00016',True,True);
-INSERT INTO DISCOS VALUES ('DISC00013','1992-11-10','Dont try to change me','Rap','GRUP00016',True,False);
+INSERT INTO DISCOS VALUES ('DISC00011','1991-07-01','Smoke','Rap','GRUP00016',False,True, 20);
+INSERT INTO DISCOS VALUES ('DISC00012','1994-08-05','B.R.O','Rap','GRUP00016',True,True, 16);
+INSERT INTO DISCOS VALUES ('DISC00013','1992-11-10','Dont try to change me','Rap','GRUP00016',True,False, null);
 
 
-INSERT INTO DISCOS VALUES ('DISC00014','1998-05-11','F*ck punk','Electronic','GRUP00021',False,True);
-INSERT INTO DISCOS VALUES ('DISC00015','1997-06-14','Move your body','Electronic','GRUP00022',True,True);
-INSERT INTO DISCOS VALUES ('DISC00016','1999-03-11','Take my medicine','Electronic','GRUP00022',True,False);
+INSERT INTO DISCOS VALUES ('DISC00014','1998-05-11','F*ck punk','Electronic','GRUP00021',False,True, 12);
+INSERT INTO DISCOS VALUES ('DISC00015','1997-06-14','Move your body','Electronic','GRUP00022',True,True, 19);
+INSERT INTO DISCOS VALUES ('DISC00016','1999-03-11','Take my medicine','Electronic','GRUP00022',True,False, 90);
 
 
-INSERT INTO DISCOS VALUES ('DISC00017','1998-06-01)','Hard steel','Heavy Metal','GRUP00026',True,True);
-INSERT INTO DISCOS VALUES ('DISC00018','1997-10-17','Rekkles','Heavy Metal','GRUP00027',True,False);
-INSERT INTO DISCOS VALUES ('DISC00019','1999-12-21','Slay the guitar','Heavy Metal','GRUP00027',False,True);
+INSERT INTO DISCOS VALUES ('DISC00017','1998-06-01)','Hard steel','Heavy Metal','GRUP00026',True,True, 60);
+INSERT INTO DISCOS VALUES ('DISC00018','1997-10-17','Rekkles','Heavy Metal','GRUP00027',True,False, null);
+INSERT INTO DISCOS VALUES ('DISC00019','1999-12-21','Slay the guitar','Heavy Metal','GRUP00027',False,True, 34);
 
 
 
