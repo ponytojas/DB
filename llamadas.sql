@@ -54,7 +54,11 @@ inner join entrada on concierto.codigo_concierto = entrada.codigo_concierto
 where entrada.precio_entrada >= cast(100 as money);
 
 -- Consulta 10
-
+select usuario_compra.opinion from usuario_compra
+inner join compra on usuario_compra.codigo_compra = compra.codigo_compra
+inner join concierto on concierto.codigo_concierto = compra.codigo_concierto
+inner join entrada on concierto.codigo_concierto = entrada.codigo_concierto
+where entrada.precio_entrada >= cast(100 as money);
 
 -- Consulta 11
 select cancion.nombre_cancion, musico.nombre_musico, musico.apellidos_musico from cancion
@@ -66,8 +70,31 @@ inner join disco on cancion_disco.id_disco = disco.id_disco
 where disco.genero_disco = 'Heavy Metal' 
 group by cancion.nombre_cancion, musico.nombre_musico, musico.apellidos_musico, disco.fecha_edicion
 having
-disco.fecha_edicion >= '2018-01-01' and disco.fecha_edicion <= '2018-12-31'
+disco.fecha_edicion >= '2018-01-01' and disco.fecha_edicion <= '2018-12-31';
 
+-- Consulta 12
+
+
+-- Consulta 13
+select distinct usuario.nombre_usuario, usuario.apellidos_usuario from usuario
+inner join usuario_compra on usuario_compra.dni_usuario_compra = usuario.dni_usuario
+inner join compra on compra.codigo_compra = usuario_compra.codigo_compra
+inner join concierto on concierto.codigo_concierto = compra.codigo_concierto
+inner join grupo on grupo.id_grupo = concierto.id_grupo
+where fecha_concierto >= '2018-01-01' and fecha_concierto <= '2018-12-31'
+and
+grupo.genero_grupo = 'Rock';
+
+-- Consulta 14
+select disco.titulo_disco, cancion.nombre_cancion from cancion
+inner join cancion_disco on cancion.id_cancion = cancion_disco.id_cancion
+inner join disco on disco.id_disco = cancion_disco.id_disco
+inner join compra on compra.id_disco = disco.id_disco
+inner join usuario_compra on usuario_compra.codigo_compra = compra.codigo_compra
+group by disco.titulo_disco, cancion.nombre_cancion
+having avg(opinion) > 8;
+
+-- Consulta 15
 
 
 
