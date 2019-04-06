@@ -95,6 +95,31 @@ group by disco.titulo_disco, cancion.nombre_cancion
 having avg(opinion) > 8;
 
 -- Consulta 15
+select grupo.nombre_grupo, musico.nombre_musico, musico.apellidos_musico from grupo
+inner join musico_grupo on musico_grupo.id_grupo = grupo.id_grupo
+inner join musico on musico.dni_musico = musico_grupo.dni_musico
+inner join concierto on concierto.id_grupo = grupo.id_grupo
+inner join disco_grupo on disco_grupo.id_grupo = grupo.id_grupo
+inner join disco on disco.id_disco = disco_grupo.id_disco
+inner join cancion_disco on cancion_disco.id_disco = disco.id_disco
+where not concierto.pais_concierto = 'ESPAÑA'
+group by grupo.nombre_grupo, musico.nombre_musico, musico.apellidos_musico
+having count(cancion_disco.id_cancion) > 10
+
+-- Consulta 16
+select cancion.nombre_cancion, musico.nombre_musico, musico.apellidos_musico from cancion
+inner join compositor_cancion on compositor_cancion.id_cancion = cancion.id_cancion
+inner join compositor on compositor.id_compositor = compositor_cancion.id_compositor
+inner join musico on compositor.dni_musico = musico.dni_musico
+inner join cancion_disco on cancion_disco.id_cancion = cancion.id_cancion
+inner join disco on disco.id_disco = cancion_disco.id_disco
+inner join disco_grupo on disco_grupo.id_disco = disco.id_disco
+inner join grupo on grupo.id_grupo = disco_grupo.id_grupo
+inner join concierto on concierto.id_grupo = grupo.id_grupo
+where not fecha_concierto < '2017-01-01' and fecha_concierto > '2017-12-31'
+group by cancion.nombre_cancion, musico.nombre_musico, musico.apellidos_musico
+
+
 
 
 
