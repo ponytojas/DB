@@ -1,10 +1,3 @@
-/*
-
-
-
-
-*/
-
 -- Consulta 1
 select grupo.nombre_grupo from grupo where genero_grupo = 'Jazz';
 
@@ -50,9 +43,31 @@ inner join disco_grupo on disco_grupo.id_disco = disco.id_disco
 inner join grupo on grupo.id_grupo = disco_grupo.id_grupo
 where disco.es_fisico = true and grupo.genero_grupo = 'Rock'
 group by disco.titulo_disco, cancion.duracion
-having cancion.duracion > 5
+having cancion.duracion > 5;
 
 -- Consulta 9
+select musico.nombre_musico, musico.apellidos_musico from musico
+inner join musico_grupo on musico_grupo.dni_musico = musico.dni_musico
+inner join grupo on grupo.id_grupo = musico_grupo.id_grupo
+inner join concierto on concierto.id_grupo = grupo.id_grupo
+inner join entrada on concierto.codigo_concierto = entrada.codigo_concierto
+where entrada.precio_entrada >= cast(100 as money);
+
+-- Consulta 10
+
+
+-- Consulta 11
+select cancion.nombre_cancion, musico.nombre_musico, musico.apellidos_musico from cancion
+inner join compositor_cancion on compositor_cancion.id_cancion = cancion.id_cancion
+inner join compositor on compositor.id_compositor = compositor_cancion.id_compositor
+inner join musico on musico.dni_musico = compositor.dni_musico
+inner join cancion_disco on cancion_disco.id_cancion = cancion.id_cancion
+inner join disco on cancion_disco.id_disco = disco.id_disco
+where disco.genero_disco = 'Heavy Metal' 
+group by cancion.nombre_cancion, musico.nombre_musico, musico.apellidos_musico, disco.fecha_edicion
+having
+disco.fecha_edicion >= '2018-01-01' and disco.fecha_edicion <= '2018-12-31'
+
 
 
 
