@@ -33,7 +33,9 @@ group by grupo.nombre_grupo
 having count (musico_grupo.dni_musico) > 3;
 
 -- Consulta 7
-
+select usuario_compra.opinion from usuario_compra
+inner join compra on usuario_compra.codigo_compra =compra.codigo_compra
+inner join disco on compra.id_disco = disco.id_disco
 
 -- Consulta 8
 select disco.titulo_disco from disco
@@ -73,6 +75,10 @@ having
 disco.fecha_edicion >= '2018-01-01' and disco.fecha_edicion <= '2018-12-31';
 
 -- Consulta 12
+
+select musico.nombre_musico , musico.apellidos_musico, disco.titulo_disco, disco.tamaño_disco from musico , disco
+inner join musico_grupo on musico.dni_musico = musico_grupo.dni_musico
+inner join grupo on musico_grupo.id_grupo = grupo.id_grupo where grupo.genero_grupo = 'Jazz' and disco.es_digital = true ;
 
 
 -- Consulta 13
