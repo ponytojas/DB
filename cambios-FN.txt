@@ -7,3 +7,29 @@ CANCION_DISCO:
 Podemos utilizar el id de la cancion como PK de la tabla.
 
 COMPOSITOR:
+Cambiamos el primary key de un serial al dni del musico para agilizar la busqueda.
+
+COMPOSITOR_CANCION:
+El id de la cancion es el nuevo pk. Modificamos el id de compositor a su dni.
+
+CONCIERTO:
+Cambiado el nombre para que haya homogeneidad.
+
+COMPRA:
+Dividimos la tabla en 3 tablas distintas, compra, compra_disco, compra_entrada.
+Compra tiene el id de compra (pk) y los puntos que se han ganado o gastado en la compra.
+
+COMPRA_ENTRADA:
+Aqui mantenemos un listado de los id de las entradas y los id de las compras, para permititr relacionarlo.
+
+PAIS_CONCIERTO:
+No es necesario mantener el pais y la ciudad en el concierto, podemos encontrar una relacion formal entre pais y ciudad, asi que nos lo llevamos a otra nueva tabla
+
+DISCO:
+Se divide disco en tre tablas diferentes, disco, disco_digital y disco_fisico.
+Disco_digital y disco_fisico guardan el precio y el tamano del disco_digital
+De disco eliminamos la mayoria de columnas, no tiene sentido guardar los booleanos.
+
+ENTRADA:
+Se divide entrada en dos tablas, entrada y precio_entrada.
+Asi tenemos en una tabla a parte todos los precios de todas las entradas.
