@@ -1,0 +1,9 @@
+CANCIONES:
+Canciones no necesita cambiar, la duracion de una cancion es especifica para esa cancion, no hay canciones con dos duraciones diferentes. 1FN
+No existen valores que puedan duplicarse. 2FN
+La duracion es especifica por cancion, no tiene una regla. 3FN
+
+CANCION_DISCO:
+Podemos utilizar el id de la cancion como PK de la tabla.
+
+COMPOSITOR:
