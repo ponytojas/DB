@@ -33,3 +33,7 @@ De disco eliminamos la mayoria de columnas, no tiene sentido guardar los boolean
 ENTRADA:
 Se divide entrada en dos tablas, entrada y precio_entrada.
 Asi tenemos en una tabla a parte todos los precios de todas las entradas.
+
+INSTRUMENTO:
+Eliminamos el id_instrumento, no vemos necesario que lo mantengamos pudiendo usar el nombre del instrumento como pk
+
