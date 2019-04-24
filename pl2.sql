@@ -59,15 +59,14 @@ CREATE TABLE MUSICO(
 	NOMBRE_MUSICO varchar (10),
 	APELLIDOS_MUSICO varchar (30),
 	DIRECCION_MUSICO varchar (30),
-	CODIGO_POSTAL int,
-	PROVINCIA varchar (30),
 	NUMERO_TELEFONO int
 );
 
 CREATE TABLE CALLE_CIUDAD(
 	CALLE varchar (30) PRIMARY KEY,
-	PROVINCIA varchar (30),
 	CODIGO_POSTAL int,
+	PROVINCIA varchar (30),
+
 	
 	CONSTRAINT FK_CALLE_CIUDAD FOREIGN KEY (CALLE) REFERENCES MUSICO (DIRECCION_MUSICO)
 	
@@ -258,105 +257,115 @@ INSERT INTO GRUPO(GENERO_GRUPO, NOMBRE_GRUPO) VALUES ('Heavy Metal', 'Splayer');
 INSERT INTO GRUPO(GENERO_GRUPO, NOMBRE_GRUPO) VALUES ('Heavy Metal', 'Megalife');
 
 -- MUSICO
-INSERT INTO MUSICO VALUES ('25801802B', 'Jim', 'Magger', 'Calle Piedras', '581392', 'Valencia', 673858);
-INSERT INTO MUSICO VALUES ('03892666P', 'Reith', 'Kichard', 'Calle Piedras', '581392', 'Valencia', 679858);
-INSERT INTO MUSICO VALUES ('40684639P', 'Warlie', 'Catts', 'Calle Piedras', '581392', 'Valencia', 679878);
-INSERT INTO MUSICO VALUES ('79874650C', 'Won', 'Rood', 'Calle Piedras', '581392', 'Valencia', 678878);
-INSERT INTO MUSICO VALUES ('60298840Q', 'Axel', 'Flower', 'Calle Cielo', '4750', 'Madrid', 678848);
-INSERT INTO MUSICO VALUES ('60853212L', 'Ash', 'Sl', 'Calle del Cepillo', '23490', 'Cuenca', 612878);
-INSERT INTO MUSICO VALUES ('10284209N', 'Muff', 'DcKagan', 'Calle Felicidad', '581392', 'Valencia', 676478);
-INSERT INTO MUSICO VALUES ('69364011J', 'Diggy', 'Reez', 'Calle Pantomina', '24581', 'Lugo', 670878);
-INSERT INTO MUSICO VALUES ('07459831B', 'Lurs', 'Alrich', 'Calle Pantomina', '24581', 'Lugo', 676788);
-INSERT INTO MUSICO VALUES ('41679098Q', 'Jame', 'Hellfield', 'Calle Pantomina', '24581', 'Lugo', 676278);
-INSERT INTO MUSICO VALUES ('43725876R', 'Hirk', 'Kammett', 'Calle Piedras', '581392', 'Valencia', 671478);
-INSERT INTO MUSICO VALUES ('67904582A', 'Roberto', 'Trujillo', 'Calle del Cepillo', '23490', 'Cuenca', 606478);
-INSERT INTO MUSICO VALUES ('20127703N', 'James', 'Bob', 'Calle Felicidad', '420420', 'Lugo', 676471);
-INSERT INTO MUSICO VALUES ('30552843B', 'Loeb', 'Chuck', 'Calle del Cepillo', '23490', 'Cuenca', 645478);
-INSERT INTO MUSICO VALUES ('14630059N', 'Nathan', 'West', 'Calle del Cepillo', '23490', 'Cuenca', 673178);
-INSERT INTO MUSICO VALUES ('99339565N', 'Jarvey', 'Meson', 'Calle Piedras', '581392', 'Valencia', 676458);
-INSERT INTO MUSICO VALUES ('04116506N', 'John', 'Brianson', 'Calle Pantomina', '24581', 'Lugo', 676228);
-INSERT INTO MUSICO VALUES ('18930909T', 'Angus', 'Old', 'Calle Pantomina', '24581', 'Lugo', 676291);
-INSERT INTO MUSICO VALUES ('35508934Q', 'Stevie', 'Old', 'Calle Pantomina', '24581', 'Lugo', 641228);
-INSERT INTO MUSICO VALUES ('84567677N', 'Phil', 'Rude', 'Calle Pantomina', '24581', 'Lugo', 693228);
-INSERT INTO MUSICO VALUES ('70307152Q', 'Freddie', 'Oxygen', 'Calle Felicidad', '420420', 'Lugo', 645628);
-INSERT INTO MUSICO VALUES ('22138391V', 'Brian', 'April', 'Calle del Cepillo', '23490', 'Cuenca', 686628);
-INSERT INTO MUSICO VALUES ('04681379M', 'Tayger', 'Rolor', 'Calle Felicidad', '420420', 'Lugo', 648128);
-INSERT INTO MUSICO VALUES ('77939246C', 'John', 'Orangenn', 'Calle Piedras', '581392', 'Valencia', 614528);
-INSERT INTO MUSICO VALUES ('89723090K', 'Paul', 'McPaulFace', 'Calle Piedras', '581392', 'Valencia', 685428);
-INSERT INTO MUSICO VALUES ('78115588K', 'George', 'Ford', 'Calle Piedras', '581392', 'Valencia', 601928);
-INSERT INTO MUSICO VALUES ('75747011F', 'Ringo', 'Monn', 'Calle Piedras', '581392', 'Valencia', 692528);
-INSERT INTO MUSICO VALUES ('22964095K', 'John', 'Coltrone', 'Calle Felicidad', '420420', 'Lugo', 649109);
-INSERT INTO MUSICO VALUES ('26086445Y', 'Miles', 'Davis', 'Calle Piedras', '581392', 'Valencia', 644899);
-INSERT INTO MUSICO VALUES ('24644404L', 'Duke', 'Ellington', 'Calle Felicidad', '420420', 'Lugo', 685709);
-INSERT INTO MUSICO VALUES ('22754613T', 'Louis', 'Amstrong', 'Calle Felicidad', '420420', 'Lugo', 608209);
-INSERT INTO MUSICO VALUES ('44465906Y', 'Thelonious', 'Monk', 'Calle Felicidad', '420420', 'Lugo', 639009);
-INSERT INTO MUSICO VALUES ('17115494K', 'Charlie', 'Parker', 'Calle Felicidad', '420420', 'Lugo', 602909);
-INSERT INTO MUSICO VALUES ('15607145N', 'Herbie', 'Hancock', 'Calle Piedras', '581392', 'Valencia', 687499);
-INSERT INTO MUSICO VALUES ('59024610D', 'Ella', 'Fitzgerlad', 'Calle Pantomina', '24581', 'Lugo', 685019);
-INSERT INTO MUSICO VALUES ('86471999A', 'Charles', 'Mingus', 'Calle Felicidad', '420420', 'Lugo', 607409);
-INSERT INTO MUSICO VALUES ('00723665Q', 'Sonny', 'Rollins', 'Calle del Cepillo', '23490', 'Cuenca', 693789);
-INSERT INTO MUSICO VALUES ('92043066X', 'Billie', 'Holliday', 'Calle Pantomina', '24581', 'Lugo', 602859);
-INSERT INTO MUSICO VALUES ('69860457G', 'Bob', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 692848);
-INSERT INTO MUSICO VALUES ('23423003X', 'Frederik', 'Hibberts', 'Calle Felicidad', '420420', 'Lugo', 685738);
-INSERT INTO MUSICO VALUES ('50245332S', 'Paul', 'Douglas', 'Calle Felicidad', '420420', 'Lugo', 699875);
-INSERT INTO MUSICO VALUES ('92524441H', 'Carl', 'Harvey', 'Calle Felicidad', '420420', 'Lugo', 699848);
-INSERT INTO MUSICO VALUES ('11621162K', 'Jackie', 'Jackson', 'Calle Felicidad', '420420', 'Lugo', 688748);
-INSERT INTO MUSICO VALUES ('69893479K', 'Leba', 'Thomas', 'Calle Felicidad', '420420', 'Lugo', 699948);
-INSERT INTO MUSICO VALUES ('37720651F', 'Ziggy', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 644988);
-INSERT INTO MUSICO VALUES ('19289235D', 'Rita', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 696578);
-INSERT INTO MUSICO VALUES ('85422439W', 'Damian', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 694228);
-INSERT INTO MUSICO VALUES ('16573214N', 'Kymani', 'Harley', 'Calle Felicidad', '420420', 'Lugo', 695878);
-INSERT INTO MUSICO VALUES ('89893693X', 'Jimmy', 'Brown', 'Calle Felicidad', '420420', 'Lugo', 611578);
-INSERT INTO MUSICO VALUES ('27660073C', 'Duncan', 'Campbell', 'Calle Felicidad', '420420', 'Lugo', 614538);
-INSERT INTO MUSICO VALUES ('52257819W', 'Earl', 'Falconer', 'Calle Felicidad', '420420', 'Lugo', 612879);
-INSERT INTO MUSICO VALUES ('64047104Q', 'Sly', 'Dumbar', 'Calle Felicidad', '420420', 'Lugo', 624538);
-INSERT INTO MUSICO VALUES ('21207485J', 'Robbie', 'Shakespeare', 'Calle Felicidad', '420420', 'Lugo', 622879);
-INSERT INTO MUSICO VALUES ('91203780V', 'GhostFace', 'Killah', 'Calle Pantomina', '24581', 'Lugo', 613378);
-INSERT INTO MUSICO VALUES ('12319495M', 'Method', 'Man', 'Calle Pantomina', '24581', 'Lugo', 618998);
-INSERT INTO MUSICO VALUES ('15935204E', 'Inspectah', 'Deck', 'Calle Pantomina', '24581', 'Lugo', 612239);
-INSERT INTO MUSICO VALUES ('61505514H', 'André', 'Patton', 'Calle Piedras', '581392', 'Valencia', 624511);
-INSERT INTO MUSICO VALUES ('83899683F', 'André', 'Benjamin', 'Calle Piedras', '581392', 'Valencia', 622822);
-INSERT INTO MUSICO VALUES ('56022535D', 'Joseph', 'Simmons', 'Calle del Cepillo', '23490', 'Cuenca', 613312);
-INSERT INTO MUSICO VALUES ('65681629T', 'Darryl', 'MacDannields', 'Calle Pantomina', '24581', 'Lugo', 618913);
-INSERT INTO MUSICO VALUES ('93648089R', 'Jason', 'Mizell', 'Calle Piedras', '581392', 'Valencia', 612233);
-INSERT INTO MUSICO VALUES ('56779701S', 'Q', 'Typed', 'Calle del Cepillo', '23490', 'Cuenca', 613222);
-INSERT INTO MUSICO VALUES ('89517953K', 'Ali', 'Shaheed', 'Calle Pantomina', '24581', 'Lugo', 618143);
-INSERT INTO MUSICO VALUES ('85459532L', 'Jarobi', 'White', 'Calle Piedras', '581392', 'Valencia', 612253);
-INSERT INTO MUSICO VALUES ('02550386P', 'Proffessor', 'Giff', 'Calle del Cepillo', '23490', 'Cuenca', 613172);
-INSERT INTO MUSICO VALUES ('44196518V', 'Terminator', 'X', 'Calle Pantomina', '24581', 'Lugo', 618183);
-INSERT INTO MUSICO VALUES ('19397488R', 'DJ', 'Lord', 'Calle Piedras', '581392', 'Valencia', 612003);
-INSERT INTO MUSICO VALUES ('46903490G', 'Duck', 'D', 'Calle Piedras', '581392', 'Valencia', 612903);
-INSERT INTO MUSICO VALUES ('14673528B', 'Guy-Manuel', 'de Homem-Christo', 'Calle Piedras', '581392', 'Valencia', 623098);
-INSERT INTO MUSICO VALUES ('64766023R', 'Thomas', 'Bangalter', 'Calle Piedras', '581392', 'Valencia', 623118);
-INSERT INTO MUSICO VALUES ('18567904G', 'Ralf', 'Hütter', 'Calle del Cepillo', '23490', 'Cuenca', 689522);
-INSERT INTO MUSICO VALUES ('25353448L', 'Fritz', 'Hilpert', 'Calle Pantomina', '24581', 'Lugo', 699883);
-INSERT INTO MUSICO VALUES ('43811846C', 'Henning', 'Schmitz', 'Calle Piedras', '581392', 'Valencia', 611113);
-INSERT INTO MUSICO VALUES ('73946694S', 'Falk', 'Grieffenhagen', 'Calle Piedras', '581392', 'Valencia', 622203);
-INSERT INTO MUSICO VALUES ('48702760F', 'Tom', 'Rowlands', 'Calle Piedras', '581392', 'Valencia', 634498);
-INSERT INTO MUSICO VALUES ('44566679Q', 'Ed', 'Simons', 'Calle Piedras', '581392', 'Valencia', 645518);
-INSERT INTO MUSICO VALUES ('53217462Q', 'Maxim', 'Reality', 'Calle Piedras', '581392', 'Valencia', 635568);
-INSERT INTO MUSICO VALUES ('01621055S', 'Liam', 'Howlett', 'Calle Piedras', '581392', 'Valencia', 649988);
-INSERT INTO MUSICO VALUES ('17460286C', 'Mike', 'Sandison', 'Calle Piedras', '581392', 'Valencia', 699108);
-INSERT INTO MUSICO VALUES ('92800631R', 'Marcus', 'Eoin', 'Calle Piedras', '581392', 'Valencia', 649918);
-INSERT INTO MUSICO VALUES ('70155839C', 'James', 'LaBrie', 'Calle del Cepillo', '23490', 'Cuenca', 611122);
-INSERT INTO MUSICO VALUES ('85968264Z', 'John', 'Petrucci', 'Calle Pantomina', '24581', 'Lugo', 614453);
-INSERT INTO MUSICO VALUES ('45080967R', 'John', 'Myung', 'Calle Piedras', '581392', 'Valencia', 622313);
-INSERT INTO MUSICO VALUES ('81771491M', 'Jordan', 'Rudess', 'Calle Piedras', '581392', 'Valencia', 699103);
-INSERT INTO MUSICO VALUES ('88410147X', 'Mike', 'Mangini', 'Calle Piedras', '581392', 'Valencia', 668298);
-INSERT INTO MUSICO VALUES ('81234005Y', 'Steve', 'Harrys', 'Calle del Cepillo', '23490', 'Cuenca', 619172);
-INSERT INTO MUSICO VALUES ('77083053W', 'Bruce', 'Dickinson', 'Calle Pantomina', '24581', 'Lugo', 636553);
-INSERT INTO MUSICO VALUES ('55295671Z', 'Dave', 'Murray', 'Calle Piedras', '581392', 'Valencia', 622991);
-INSERT INTO MUSICO VALUES ('63870556Q', 'Adrian', 'Smith', 'Calle Piedras', '581392', 'Valencia', 699000);
-INSERT INTO MUSICO VALUES ('89246502Q', 'Nicko', 'McBrain', 'Calle Piedras', '581392', 'Valencia', 666648);
-INSERT INTO MUSICO VALUES ('04430110B', 'Janick', 'Gers', 'Calle Piedras', '581392', 'Valencia', 644458);
-INSERT INTO MUSICO VALUES ('91561434K', 'Tom', 'Aray', 'Calle Piedras', '581392', 'Valencia', 699991);
-INSERT INTO MUSICO VALUES ('43877397K', 'Kerry', 'King', 'Calle Piedras', '581392', 'Valencia', 681760);
-INSERT INTO MUSICO VALUES ('57410420M', 'Paul', 'Bostaph', 'Calle Piedras', '581392', 'Valencia', 663448);
-INSERT INTO MUSICO VALUES ('75518139P', 'Gary', 'Holt', 'Calle Piedras', '581392', 'Valencia', 699100);
-INSERT INTO MUSICO VALUES ('37149259G', 'Dave', 'Mustaine', 'Calle Piedras', '581392', 'Valencia', 661781);
-INSERT INTO MUSICO VALUES ('55728668J', 'David', 'Ellefson', 'Calle Piedras', '581392', 'Valencia', 699016);
-INSERT INTO MUSICO VALUES ('82253991B', 'Kiko', 'Loureiro', 'Calle Piedras', '581392', 'Valencia', 669948);
-INSERT INTO MUSICO VALUES ('05856287G', 'Dirk', 'Verbeuren', 'Calle Piedras', '581392', 'Valencia', 691111);
+INSERT INTO MUSICO VALUES ('25801802B', 'Jim', 'Magger', 'Calle Piedras', 673858);
+INSERT INTO MUSICO VALUES ('03892666P', 'Reith', 'Kichard', 'Calle Piedras', 679858);
+INSERT INTO MUSICO VALUES ('40684639P', 'Warlie', 'Catts', 'Calle Piedras', 679878);
+INSERT INTO MUSICO VALUES ('79874650C', 'Won', 'Rood', 'Calle Piedras', 678878);
+INSERT INTO MUSICO VALUES ('60298840Q', 'Axel', 'Flower', 'Calle Cielo', 678848);
+INSERT INTO MUSICO VALUES ('60853212L', 'Ash', 'Sl', 'Calle del Cepillo', 612878);
+INSERT INTO MUSICO VALUES ('10284209N', 'Muff', 'DcKagan','Calle Felicidad', 676478);
+INSERT INTO MUSICO VALUES ('69364011J', 'Diggy', 'Reez','Calle Pantomina', 670878);
+INSERT INTO MUSICO VALUES ('07459831B', 'Lurs', 'Alrich','Calle Pantomina', 676788);
+INSERT INTO MUSICO VALUES ('41679098Q', 'Jame', 'Hellfield','Calle Pantomina', 676278);
+INSERT INTO MUSICO VALUES ('43725876R', 'Hirk', 'Kammett', 'Calle Piedras', 671478);
+INSERT INTO MUSICO VALUES ('67904582A', 'Roberto', 'Trujillo', 'Calle del Cepillo', 606478);
+INSERT INTO MUSICO VALUES ('20127703N', 'James', 'Bob', 'Calle Farinha',676471);
+INSERT INTO MUSICO VALUES ('30552843B', 'Loeb', 'Chuck', 'Calle del Cepillo', 645478);
+INSERT INTO MUSICO VALUES ('14630059N', 'Nathan', 'West', 'Calle del Cepillo', 673178);
+INSERT INTO MUSICO VALUES ('99339565N', 'Jarvey', 'Meson', 'Calle Piedras', 676458);
+INSERT INTO MUSICO VALUES ('04116506N', 'John', 'Brianson','Calle Pantomina', 676228);
+INSERT INTO MUSICO VALUES ('18930909T', 'Angus', 'Old','Calle Pantomina', 676291);
+INSERT INTO MUSICO VALUES ('35508934Q', 'Stevie', 'Old','Calle Pantomina', 641228);
+INSERT INTO MUSICO VALUES ('84567677N', 'Phil', 'Rude','Calle Pantomina', 693228);
+INSERT INTO MUSICO VALUES ('70307152Q', 'Freddie', 'Oxygen','Calle Farinha', 645628);
+INSERT INTO MUSICO VALUES ('22138391V', 'Brian', 'April', 'Calle del Cepillo', 686628);
+INSERT INTO MUSICO VALUES ('04681379M', 'Tayger', 'Rolor','Calle Farinha', 648128);
+INSERT INTO MUSICO VALUES ('77939246C', 'John', 'Orangenn', 'Calle Piedras', 614528);
+INSERT INTO MUSICO VALUES ('89723090K', 'Paul', 'McPaulFace', 'Calle Piedras', 685428);
+INSERT INTO MUSICO VALUES ('78115588K', 'George', 'Ford', 'Calle Piedras', 601928);
+INSERT INTO MUSICO VALUES ('75747011F', 'Ringo', 'Monn', 'Calle Piedras', 692528);
+INSERT INTO MUSICO VALUES ('22964095K', 'John', 'Coltrone','Calle Farinha', 649109);
+INSERT INTO MUSICO VALUES ('26086445Y', 'Miles', 'Davis', 'Calle Piedras', 644899);
+INSERT INTO MUSICO VALUES ('24644404L', 'Duke', 'Ellington','Calle Farinha', 685709);
+INSERT INTO MUSICO VALUES ('22754613T', 'Louis', 'Amstrong','Calle Farinha', 608209);
+INSERT INTO MUSICO VALUES ('44465906Y', 'Thelonious', 'Monk','Calle Farinha', 639009);
+INSERT INTO MUSICO VALUES ('17115494K', 'Charlie', 'Parker','Calle Farinha', 602909);
+INSERT INTO MUSICO VALUES ('15607145N', 'Herbie', 'Hancock', 'Calle Piedras', 687499);
+INSERT INTO MUSICO VALUES ('59024610D', 'Ella', 'Fitzgerlad','Calle Pantomina', 685019);
+INSERT INTO MUSICO VALUES ('86471999A', 'Charles', 'Mingus','Calle Farinha', 607409);
+INSERT INTO MUSICO VALUES ('00723665Q', 'Sonny', 'Rollins', 'Calle del Cepillo', 693789);
+INSERT INTO MUSICO VALUES ('92043066X', 'Billie', 'Holliday','Calle Pantomina', 602859);
+INSERT INTO MUSICO VALUES ('69860457G', 'Bob', 'Harley','Calle Farinha', 692848);
+INSERT INTO MUSICO VALUES ('23423003X', 'Frederik', 'Hibberts','Calle Farinha', 685738);
+INSERT INTO MUSICO VALUES ('50245332S', 'Paul', 'Douglas','Calle Farinha', 699875);
+INSERT INTO MUSICO VALUES ('92524441H', 'Carl', 'Harvey','Calle Farinha', 699848);
+INSERT INTO MUSICO VALUES ('11621162K', 'Jackie', 'Jackson','Calle Farinha', 688748);
+INSERT INTO MUSICO VALUES ('69893479K', 'Leba', 'Thomas','Calle Farinha', 699948);
+INSERT INTO MUSICO VALUES ('37720651F', 'Ziggy', 'Harley','Calle Farinha', 644988);
+INSERT INTO MUSICO VALUES ('19289235D', 'Rita', 'Harley','Calle Farinha', 696578);
+INSERT INTO MUSICO VALUES ('85422439W', 'Damian', 'Harley','Calle Farinha', 694228);
+INSERT INTO MUSICO VALUES ('16573214N', 'Kymani', 'Harley','Calle Farinha', 695878);
+INSERT INTO MUSICO VALUES ('89893693X', 'Jimmy', 'Brown','Calle Farinha', 611578);
+INSERT INTO MUSICO VALUES ('27660073C', 'Duncan', 'Campbell','Calle Farinha', 614538);
+INSERT INTO MUSICO VALUES ('52257819W', 'Earl', 'Falconer','Calle Farinha', 612879);
+INSERT INTO MUSICO VALUES ('64047104Q', 'Sly', 'Dumbar','Calle Farinha', 624538);
+INSERT INTO MUSICO VALUES ('21207485J', 'Robbie', 'Shakespeare','Calle Farinha', 622879);
+INSERT INTO MUSICO VALUES ('91203780V', 'GhostFace', 'Killah','Calle Pantomina', 613378);
+INSERT INTO MUSICO VALUES ('12319495M', 'Method', 'Man','Calle Pantomina', 618998);
+INSERT INTO MUSICO VALUES ('15935204E', 'Inspectah', 'Deck','Calle Pantomina', 612239);
+INSERT INTO MUSICO VALUES ('61505514H', 'André', 'Patton', 'Calle Piedras', 624511);
+INSERT INTO MUSICO VALUES ('83899683F', 'André', 'Benjamin', 'Calle Piedras', 622822);
+INSERT INTO MUSICO VALUES ('56022535D', 'Joseph', 'Simmons', 'Calle del Cepillo', 613312);
+INSERT INTO MUSICO VALUES ('65681629T', 'Darryl', 'MacDannields','Calle Pantomina', 618913);
+INSERT INTO MUSICO VALUES ('93648089R', 'Jason', 'Mizell', 'Calle Piedras', 612233);
+INSERT INTO MUSICO VALUES ('56779701S', 'Q', 'Typed', 'Calle del Cepillo', 613222);
+INSERT INTO MUSICO VALUES ('89517953K', 'Ali', 'Shaheed','Calle Pantomina', 618143);
+INSERT INTO MUSICO VALUES ('85459532L', 'Jarobi', 'White', 'Calle Piedras', 612253);
+INSERT INTO MUSICO VALUES ('02550386P', 'Proffessor', 'Giff', 'Calle del Cepillo', 613172);
+INSERT INTO MUSICO VALUES ('44196518V', 'Terminator', 'X','Calle Pantomina', 618183);
+INSERT INTO MUSICO VALUES ('19397488R', 'DJ', 'Lord', 'Calle Piedras', 612003);
+INSERT INTO MUSICO VALUES ('46903490G', 'Duck', 'D', 'Calle Piedras', 612903);
+INSERT INTO MUSICO VALUES ('14673528B', 'Guy-Manuel', 'de Homem-Christo', 'Calle Piedras', 623098);
+INSERT INTO MUSICO VALUES ('64766023R', 'Thomas', 'Bangalter', 'Calle Piedras', 623118);
+INSERT INTO MUSICO VALUES ('18567904G', 'Ralf', 'Hütter', 'Calle del Cepillo', 689522);
+INSERT INTO MUSICO VALUES ('25353448L', 'Fritz', 'Hilpert','Calle Pantomina', 699883);
+INSERT INTO MUSICO VALUES ('43811846C', 'Henning', 'Schmitz', 'Calle Piedras', 611113);
+INSERT INTO MUSICO VALUES ('73946694S', 'Falk', 'Grieffenhagen', 'Calle Piedras', 622203);
+INSERT INTO MUSICO VALUES ('48702760F', 'Tom', 'Rowlands', 'Calle Piedras', 634498);
+INSERT INTO MUSICO VALUES ('44566679Q', 'Ed', 'Simons', 'Calle Piedras', 645518);
+INSERT INTO MUSICO VALUES ('53217462Q', 'Maxim', 'Reality', 'Calle Piedras', 635568);
+INSERT INTO MUSICO VALUES ('01621055S', 'Liam', 'Howlett', 'Calle Piedras', 649988);
+INSERT INTO MUSICO VALUES ('17460286C', 'Mike', 'Sandison', 'Calle Piedras', 699108);
+INSERT INTO MUSICO VALUES ('92800631R', 'Marcus', 'Eoin', 'Calle Piedras', 649918);
+INSERT INTO MUSICO VALUES ('70155839C', 'James', 'LaBrie', 'Calle del Cepillo', 611122);
+INSERT INTO MUSICO VALUES ('85968264Z', 'John', 'Petrucci','Calle Pantomina', 614453);
+INSERT INTO MUSICO VALUES ('45080967R', 'John', 'Myung', 'Calle Piedras', 622313);
+INSERT INTO MUSICO VALUES ('81771491M', 'Jordan', 'Rudess', 'Calle Piedras', 699103);
+INSERT INTO MUSICO VALUES ('88410147X', 'Mike', 'Mangini', 'Calle Piedras', 668298);
+INSERT INTO MUSICO VALUES ('81234005Y', 'Steve', 'Harrys', 'Calle del Cepillo', 619172);
+INSERT INTO MUSICO VALUES ('77083053W', 'Bruce', 'Dickinson','Calle Pantomina', 636553);
+INSERT INTO MUSICO VALUES ('55295671Z', 'Dave', 'Murray', 'Calle Piedras', 622991);
+INSERT INTO MUSICO VALUES ('63870556Q', 'Adrian', 'Smith', 'Calle Piedras', 699000);
+INSERT INTO MUSICO VALUES ('89246502Q', 'Nicko', 'McBrain', 'Calle Piedras', 666648);
+INSERT INTO MUSICO VALUES ('04430110B', 'Janick', 'Gers', 'Calle Piedras', 644458);
+INSERT INTO MUSICO VALUES ('91561434K', 'Tom', 'Aray', 'Calle Piedras', 699991);
+INSERT INTO MUSICO VALUES ('43877397K', 'Kerry', 'King', 'Calle Piedras', 681760);
+INSERT INTO MUSICO VALUES ('57410420M', 'Paul', 'Bostaph', 'Calle Piedras', 663448);
+INSERT INTO MUSICO VALUES ('75518139P', 'Gary', 'Holt', 'Calle Piedras', 699100);
+INSERT INTO MUSICO VALUES ('37149259G', 'Dave', 'Mustaine', 'Calle Piedras', 661781);
+INSERT INTO MUSICO VALUES ('55728668J', 'David', 'Ellefson', 'Calle Piedras', 699016);
+INSERT INTO MUSICO VALUES ('82253991B', 'Kiko', 'Loureiro', 'Calle Piedras', 669948);
+INSERT INTO MUSICO VALUES ('05856287G', 'Dirk', 'Verbeuren', 'Calle Piedras', 691111);
+
+-- CALLE_CIUDAD
+
+INSERT INTO CALLE_CIUDAD VALUES ('Calle Piedras', '581392', 'Valencia');
+INSERT INTO CALLE_CIUDAD VALUES ('Calle Cielo', '4750', 'Madrid');
+INSERT INTO CALLE_CIUDAD VALUES ('Calle del Cepillo', '23490', 'Cuenca');
+INSERT INTO CALLE_CIUDAD VALUES ('Calle Felicidad', '581392', 'Valencia');
+INSERT INTO CALLE_CIUDAD VALUES ('Calle Pantomina', '24581', 'Lugo');
+INSERT INTO CALLE_CIUDAD VALUES ('Calle Farinha', '420420', 'Barcelona');
+
 
 -- INSTRUMENTOS
 INSERT INTO INSTRUMENTO(NOMBRE_INSTRUMENTO, TIPO_INSTRUMENTO) VALUES('Gibson Les Paul', 'Guitarra Electrica');
