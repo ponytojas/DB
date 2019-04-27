@@ -3,3 +3,5 @@
 *.iml
 .vscode/*
 
+/PL3/build/
+/PL3/nbproject/private/
