@@ -15,15 +15,15 @@ import java.io.*;
 public class PL3 {
 
     /**
-     * @function This create the DB connection
      * @throws InterruptedException
      * @throws SQLException
      * @throws IOException
      * @throws IllegalAccessException
      * @throws ClassNotFoundException
      * @throws InstantiationException
+     * @function This create the DB connection
      */
-    private static void primeraParte () throws InterruptedException, SQLException, IOException, IllegalAccessException,
+    private static void primeraParte() throws InterruptedException, SQLException, IOException, IllegalAccessException,
             ClassNotFoundException, InstantiationException {
 
         DBConnection conn = new DBConnection();
@@ -43,11 +43,11 @@ public class PL3 {
     }
 
     /**
-     * @function This method make all DB calls from PL2 reading from a .txt file
      * @param conn This is a DBConnection object to handle all request to DB
      * @throws IOException
      * @throws InterruptedException
      * @throws SQLException
+     * @function This method make all DB calls from PL2 reading from a .txt file
      */
 
     private static void allCallFromPL2(Connection conn) throws IOException, InterruptedException, SQLException {
@@ -68,7 +68,7 @@ public class PL3 {
             Statement stmnt = conn.createStatement();
             ResultSet rs = stmnt.executeQuery(st);
 
-            while(rs.next()) {
+            while (rs.next()) {
                 amountResponsesPerRow = 0;
                 while (amountResponsesPerRow < calls.amountOfResults(selectedOption)) {
 
@@ -91,30 +91,24 @@ public class PL3 {
      * Just a clear terminal screen
      */
 
-    private static void clearScreen(){
-        try
-        {
+    private static void clearScreen() {
+        try {
             final String os = System.getProperty("os.name");
 
-            if (os.contains("Windows"))
-            {
+            if (os.contains("Windows")) {
                 Runtime.getRuntime().exec("cls");
-            }
-            else
-            {
+            } else {
                 Runtime.getRuntime().exec("clear");
             }
-        }
-        catch (final Exception e)
-        {
+        } catch (final Exception e) {
             //  Handle any exceptions.
         }
     }
 
 
     /**
-     * @function Main method to select what to do next
      * @param args the command line arguments
+     * @function Main method to select what to do next
      */
     public static void main(String[] args) throws IllegalAccessException, ClassNotFoundException,
             InstantiationException, IOException, InterruptedException, SQLException {
@@ -135,7 +129,7 @@ public class PL3 {
                 e.printStackTrace();
             }
 
-            switch (selection.toUpperCase()){
+            switch (selection.toUpperCase()) {
                 case "S":
                     System.out.println("Saliendo del programa");
                     System.exit(1);
@@ -156,7 +150,5 @@ public class PL3 {
                     System.out.println("No es una opcion correcta, vuelve a intentarlo");
             }
         }
-
     }
-    
 }
