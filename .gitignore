@@ -38,3 +38,4 @@ PL3/out/production/PL3/META-INF/PL3\.kotlin_module
 PL3/build\.xml
 
 PL3/manifest\.mf
+*.class
