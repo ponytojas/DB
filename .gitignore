@@ -39,3 +39,5 @@ PL3/build\.xml
 
 PL3/manifest\.mf
 *.class
+
+PL3/\.idea/inspectionProfiles/Project_Default\.xml
