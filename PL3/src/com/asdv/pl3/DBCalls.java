@@ -1,5 +1,10 @@
 package com.asdv.pl3;
 
+/**
+ *
+ * @author Antonio Serrano and Daniel Villalobos
+ * @version 1.0.0
+ */
 class DBCalls {
 
     String getStringToShow(int call){
