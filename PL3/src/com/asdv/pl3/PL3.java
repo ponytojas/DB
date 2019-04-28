@@ -14,9 +14,19 @@ import java.io.*;
  */
 public class PL3 {
 
+    /**
+     * @function This create the DB connection
+     * @throws InterruptedException
+     * @throws SQLException
+     * @throws IOException
+     * @throws IllegalAccessException
+     * @throws ClassNotFoundException
+     * @throws InstantiationException
+     */
     private static void primeraParte () throws InterruptedException, SQLException, IOException, IllegalAccessException,
             ClassNotFoundException, InstantiationException {
-        BBDDConnection conn = new BBDDConnection();
+
+        DBConnection conn = new DBConnection();
 
         if (conn.connect())
             System.out.println("Created connection");
@@ -32,6 +42,13 @@ public class PL3 {
 
     }
 
+    /**
+     * @function This method make all DB calls from PL2 reading from a .txt file
+     * @param conn This is a DBConnection object to handle all request to DB
+     * @throws IOException
+     * @throws InterruptedException
+     * @throws SQLException
+     */
 
     private static void allCallFromPL2(Connection conn) throws IOException, InterruptedException, SQLException {
         System.out.println("Starting to show all DB calls from PL2");
@@ -70,6 +87,10 @@ public class PL3 {
         }
     }
 
+    /**
+     * Just a clear terminal screen
+     */
+
     private static void clearScreen(){
         try
         {
@@ -92,6 +113,7 @@ public class PL3 {
 
 
     /**
+     * @function Main method to select what to do next
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IllegalAccessException, ClassNotFoundException,

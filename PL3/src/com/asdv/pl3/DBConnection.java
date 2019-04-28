@@ -9,7 +9,7 @@ import java.sql.Statement;
  *
  * @author Antonio Serrano
  */
-public class BBDDConnection {
+public class DBConnection {
     
     private Connection connection = null;
 
