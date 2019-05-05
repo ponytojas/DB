@@ -30,15 +30,19 @@ public class PL3 {
 
         if (conn.connect())
             System.out.println("Created connection");
-        else
+        else {
             System.out.println("There was a problem connecting");
+            System.exit(1);
+        }
 
         allCallFromPL2(conn.getConnection());
 
         if (conn.disconnect())
             System.out.println("Closed connection");
-        else
+        else {
             System.out.println("There was a problem closing the connection");
+            System.exit(1);
+        }
 
     }
 
